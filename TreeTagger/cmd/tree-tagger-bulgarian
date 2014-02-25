@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Set these paths appropriately
+
+BIN=/home/david/Classwork/CS124/MachineTranslation/TreeTagger/bin
+CMD=/home/david/Classwork/CS124/MachineTranslation/TreeTagger/cmd
+LIB=/home/david/Classwork/CS124/MachineTranslation/TreeTagger/lib
+
+OPTIONS="-token -lemma -sgml"
+
+TOKENIZER=${CMD}/utf8-tokenize.perl
+TAGGER=${BIN}/tree-tagger
+PARFILE=${LIB}/bulgarian.par
+
+# do tokenization
+$TOKENIZER $* |
+$TAGGER $OPTIONS $PARFILE

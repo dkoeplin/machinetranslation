@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Set these paths appropriately
+
+BIN=/home/david/Classwork/CS124/MachineTranslation/TreeTagger/bin
+CMD=/home/david/Classwork/CS124/MachineTranslation/TreeTagger/cmd
+LIB=/home/david/Classwork/CS124/MachineTranslation/TreeTagger/lib
+
+OPTIONS="-token -lemma -sgml"
+
+TAGGER=${BIN}/tree-tagger
+TOKENIZER=${CMD}/tokenize.pl
+ABBR_LIST=${LIB}/french-abbreviations
+PARFILE=${LIB}/french.par
+
+$TOKENIZER -f -a $ABBR_LIST $* |
+$TAGGER $OPTIONS $PARFILE
