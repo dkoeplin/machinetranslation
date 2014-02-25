@@ -9,9 +9,6 @@ public class TaggedSentence {
    private List<TaggedWord> sentence;
    private Iterator<TaggedWord> iterator = null;
    
-   Pattern wordPattern = Pattern.compile("[\\p{L}\\w].*[\\p{L}\\w]|[\\w\\p{L}]");
-   Pattern spcPattern = Pattern.compile("\\s+");
-   
    public TaggedSentence() {
       sentence = new ArrayList<TaggedWord>();
    }
@@ -29,16 +26,8 @@ public class TaggedSentence {
    }
     
    public void addWord(String word, String POS) {
-      if (word != null && !word.equals("")) {
-         Matcher wfind = wordPattern.matcher(word);
-         Matcher sfind = spcPattern.matcher(word);
-         if (wfind.find())
-            sentence.add(new TaggedWord(word, POS));
-         else if (sfind.find())
-            sentence.add(new TaggedWord(word, TaggedWord.space));
-         else
-            sentence.add(new TaggedWord(word, TaggedWord.punct));
-      }
+      if (word != null && !word.equals(""))
+         sentence.add(new TaggedWord(word, POS));
    }
    public void addWord(TaggedWord word) {
       if (word != null)

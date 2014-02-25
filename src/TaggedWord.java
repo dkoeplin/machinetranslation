@@ -1,15 +1,25 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 
 public class TaggedWord {
-   public static final String punct = "PCT";
-   public static final String space = "SPC";
-   public static final String unk   = "UNK";
+   private static final String punct = "PCT";
+   private static final String space = "SPC";
+   private static final String unk   = "UNK";
+   
+   private static Pattern wordPattern = Pattern.compile("[\\p{L}\\w].*[\\p{L}\\w]|[\\w\\p{L}]");
+   private static Pattern spcPattern = Pattern.compile("\\s+");
    
    final String word;
    final String POS;
    
    public TaggedWord(String w, String p) {
       word = w; 
-      POS = p;
+      Matcher wfind = wordPattern.matcher(w);
+      Matcher sfind = spcPattern.matcher(w);
+      POS = (wfind.find()) ? p : 
+            (sfind.find()) ? space : 
+            (w.equals("")) ? unk : punct;
    }
    
    public boolean samePOS(TaggedWord other) {

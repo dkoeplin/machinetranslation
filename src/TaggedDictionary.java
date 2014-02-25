@@ -35,7 +35,7 @@ public class TaggedDictionary {
             for (String e : curTrans) {
                String[] tags = e.split("/");
                String trans = tags[0].trim();
-               String pos = (tags.length > 1) ? tags[1].trim() : TaggedWord.unk;
+               String pos = (tags.length > 1) ? tags[1].trim() : "";
                E.add(new TaggedWord(trans, pos));
             }
             translations.put(f.toLowerCase(), E);
