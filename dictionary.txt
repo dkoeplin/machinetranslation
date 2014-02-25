@@ -1,20 +1,554 @@
-esto
-this
+a
+to
+actual
+current, present
+adicta
+addicted, attached
+adivinar
+to guess
+admirados
+to admire
+adquisición
+acquisition
+aguardaba
+to wait for, to await, to expect
+ahora
+now
+al
+to the
+alcalde
+mayor
+alertado
+to alert
+algún
+one, some
+amigos
+friends
+amistad
+friendship
+anuncio
+ad, announcement
+apenas
+as soon as, hardly
+apoyó
+supported, to support
+apriesa
+quickly
+arma
+weapon
+arrestadas
+to arrest, intrepid, bold
+asesinadas
+to murder
+atado
+tied, to tie
+augusto
+August
+aunque
+although
+avisó
+notice, warning
+barrera
+barrier
+bien
+well
+candidato
+candidate
+caso
+case
+causa
+cause
+caída
+fall
+como
+as, like
+compañía
+company
+compraba
+to buy
+comunique
+to communicate
+con
+with
+consejo
+advice
+contra
+against
+cosa
+thing
+creo
+to create
+cuando
+when
+dar
+to give
+datos
+data
+de
+of, from
+declaraba
+to declare, to state
+dejaba
+to leave
+del
+of the
+desasosiego
+uneasiness, restlessness, unrest
+desposado
+groom
+dicho
+said
+docenas
+dozen
+don
+el capo
+dos
+two
+durante
+during
+dólares
+dollar
+el
+the
+electoral
+electorcal
+emergencia
+emergency
+empleados
+employees
+empresa
+business, company
+en
+in
+enamorado
+in love, lover
+encaje
+lace
+encarceladas
+to jail, to imprison
+entre
+between
 es
 is
+escolares
+school
+especialmente
+especially
+esta
+to be
+estaba
+to be
+estarse
+to be
+estas
+to be
+experimenta
+to experiment, to try out, to experience
+extraña
+strange
+facebook
+Facebook
+fernando
+Fernando
+frenando
+to slow down, to stop, to brake
+fuego
+fire
+fundador
+founder
+ganado
+cattle, to win
+gran
+great
+gusta
+to like
+ha
+to have
+habría
+would have
+había
+to have
+hacer
+to do, to make
+han
+to have
+hasta
+until
+hay
+there is, there are
+heridos
+to hurt
+ido
+gone
+impacto
+impact
+improviso
+unexpected
+inicia
+to start, to begin
+instantánea
+snapshot
+la
+the
+las
+the
+le
+to him, to her
+les
+them
+llamaban
+to call
+llamativa
+striking
+lo
+it
+locales
+local
+los
+the
+lugar
+place
+mandatario
+leader
+mantiene
+to maintain, to keep
+mauricio
+Mauricio
+me
+me
+medios
+means
+mensajería
+messaging, courier service
+millones
+millions
+modelo
+model
+mover
+to move
+movido
+moved
+mudanza
+alteration
+más
+more
+nacional
+national
+no
+no
+oficialista
+government
+olímpicos
+Olympic
+opositor
+opponent
+oír
+to hear, to listen
+pastores
+shepherd
+pegada--
+pensamientos
+thoughts
+personas
+persons
+piernas
+legs
+poco
+little, few
+podían
+to be able
+por
+by
+porque
+because
+preliminares
+preliminary
+primera
+first
+privanza
+favour
+problema
+problem
+pudo
+to be able to
+pues
+well, then
+que
+that
+quedaron
+to stay, to remain
+quedo
+to stay, to remain
+quien
+who
+quito
+to remove
+razones
+to reason, to argue
+reportados
+to report
+resulta
+result
+rodas
+Rodas
+saltos
+to jump, to leap
+se
+himself, herself, itself
+secreta
+secret
+según
+according to, as
+semana
+week
+semanas
+weeks
+sentí
+to feel, to be sorry, to symphatise
+ser
+to be
+serlo
+to be
+servicio
+service
+servicios
+services
+similar
+similar
+soy
+to be
+su
+his, her
+suelo
+ground, floor
+sus
+their
+sí
+yes
+tan
+so
+tanto
+so
+televisor
+TV set
+tendederos
+clothes line
+tenía
+to have, to get, to be
+tiene
+has
+todas
+all
+todos
+everybody
+tornó
+around
+tras
+after
+tratarse
+to try, to treat
+traía
+to bring
+tres
+three
+un
+a
 una
 a
-prueba
-test, exam, proof, evidence
-del
-of
-sistema
-system 
-de
-the
-traducción
-translation
-diccionario
-dictionary
-sólo
-only
+uno
+vecino
+neighbor
+vestidos
+to dress
+vez
+time
+viaje
+trip
+vieron
+to see, to watch, to look at
+viviendas
+housing, home
+votos
+vote
+whatsapp
+WhatsApp
+y
+and
+yo
+i
+ámbito
+field, scope
+él
+he
+único
+unique, only
+xenón
+xenon
+utiliza
+to use
+habitualmente
+usually
+clínicas
+clinics
+narcótico
+narcotic
+pero
+but
+además
+besides, in addition, moreover
+gas
+gas
+inodoro
+toilet
+e ---
+and
+incoloro
+colorless
+detectable
+detectable
+controles
+to control, control
+dopaje
+doping
+dosis
+doses
+muy
+very
+concentradas
+concentrated
+estimula
+to encourage, to estimulate
+secreción
+secretion
+hormona
+hormone
+eritropoietina
+Erythropoietin
+linea
+line
+iPhone
+iPhone
+5S
+5S
+Apple
+Apple
+incorpora
+to incorporate, to add
+lector
+reader
+huella
+footprint
+digital
+digital
+medida
+measurements, dimensions
+seguridad
+security
+nuevo
+new
+primer ---
+first
+ministro
+minister, secretary
+italiano
+Italian
+nunca
+never
+diputado
+representative, delegate
+algo
+something, a little
+muchos
+lots, much
+nos
+us
+echan
+to throw, to fire
+cara
+face
+consideran
+to consider
+falta
+mistake, error, to miss, to fail
+experiencia
+experience
+política
+politics, policy
+varios
+vario
+miembros
+members
+comunidades
+communities
+mapuche
+Mapuche
+grupo
+group
+indígena
+indigenous
+importante
+important
+Chile
+Chile
+denunciado
+to report, to accuse
+desde
+from
+hace
+to do
+unos
+ones
+meses
+months
+avistamiento
+sighting
+extraños
+strange
+aviones
+plane
+tripulados
+to man
+regiones
+regions
+sur
+south
+país
+country
+sin
+without
+cultura
+culture
+fiscal
+fiscal
+después
+after
+revolución
+revolution
+eliminara
+to remove, to eliminate
+prácticamente
+practically
+impuestos
+to impose
+nueva
+new
+ley
+law
+tributaria
+tributary, tax
+busca
+search
+revertir
+to revert
+esa
+that
+situación
+situation, location
+para
+for, to
+respaldar
+to endorse, to support
+gastos
+expenses
+sociales
+social
