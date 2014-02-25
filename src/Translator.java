@@ -1,62 +1,56 @@
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Translator {
-   Dictionary dictionary;
-   Pattern wordPattern = Pattern.compile("\\w.*\\w");
+   TaggedDictionary dictionary;
+   Pattern wordPattern = Pattern.compile("[\\p{L}\\w].*[\\p{L}\\w]|[\\w\\p{L}]");
    
-   public Translator(Dictionary dict) {
+   public Translator(TaggedDictionary dict) {
       dictionary = dict;
    }
    
    // Performs a direct, word for word translation of a sentence based
    // on the translator's dictionary
-   public List<String> directTranslation(List<String> sentences) {
-      List<String> translations = new ArrayList<String>();
+   public List<TaggedSentence> directTranslation(List<TaggedSentence> sentences) {
+      List<TaggedSentence> translations = new ArrayList<TaggedSentence>();
       if (sentences == null || sentences.isEmpty())
          return translations;
                
       // Iterate through sentences
-      for (String sentence : sentences) {
-         String translation = "";
-         sentence.replaceAll("-", " ");      // replace dashes with spaces
-         String [] words = sentence.split("\\s+");    // split on spaces
-         
-         // Iterate through words in sentence
-         for (String sequence : words) {      
-            Matcher m = wordPattern.matcher(sequence);
-            if (m.find()) {
-               // Find the word if one exists
-               String word = m.group(0);
-               // replace all non-word characters
-               String f_word = word.replaceAll("[^\\w]", "").toLowerCase();
-               String e_word = dictionary.translateWord(f_word);
-               // replace the original word (before non-word char replacement) with the translated word
-               translation += sequence.replace(word, e_word) + " ";
-            }
-            else
-               translation += sequence + " ";
+      for (TaggedSentence sentence : sentences) {
+         TaggedSentence translation = new TaggedSentence();
+        
+         sentence.initIter();
+         while (sentence.hasNext()) {
+            TaggedWord f = sentence.next();
+            
+            // List<TaggedWord> E = dictionary.getWordTranslations(f);
+            translation.addWord(dictionary.getRandomTranslation(f));
          }
-         translations.add(translation.trim());
+         translations.add(translation);
       }
       return translations;
    }
    
    public static void main(String[] args) {  
-      Dictionary dictionary = new Dictionary("dictionary.txt", true);
+      TaggedDictionary dictionary = new TaggedDictionary("dictionary.txt", true);
       Translator translator = new Translator(dictionary);
+      TreeTagger spanishPOS = new TreeTagger(System.getProperty("user.dir") + "/TreeTagger",
+            "cmd/tree-tagger-spanish-utf8");
       
       // Load sentences from file
-      List<String> sentences = new ArrayList<String>();
+      List<TaggedSentence> sentences = new ArrayList<TaggedSentence>();
       try {
-         BufferedReader input = new BufferedReader(new FileReader("sentences.txt"));
+         BufferedReader input = new BufferedReader( new InputStreamReader(new FileInputStream("sentences_dev.txt"), "UTF8"));
          for(String line = input.readLine(); line != null; line = input.readLine())
-            sentences.add(line.trim());
+            sentences.add(spanishPOS.tagSentence(line.trim()));
          
          input.close();
       }
@@ -64,10 +58,10 @@ public class Translator {
          e.printStackTrace();
          System.exit(1);
       }
-    
+      
       // Translate sentences and output to terminal
-      List<String> translatedSentences = translator.directTranslation(sentences);
-      for (String sentence : translatedSentences)
-         System.out.println(sentence);
+      List<TaggedSentence> translatedSentences = translator.directTranslation(sentences);
+      for (TaggedSentence sentence : translatedSentences)
+         sentence.print(true);
    }
 }

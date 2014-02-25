@@ -246,7 +246,8 @@ oír
 hear, listen
 pastores
 shepherd
-pegada--
+pegada
+appeal
 pensamientos
 thoughts
 personas
@@ -356,6 +357,7 @@ a
 una
 a
 uno
+one
 vecino
 neighbor
 vestidos
@@ -370,8 +372,6 @@ viviendas
 housing, home
 votos
 vote
-whatsapp
-WhatsApp
 y
 and
 yo
@@ -400,7 +400,7 @@ gas
 gas
 inodoro
 toilet
-e ---
+e
 and
 incoloro
 colorless
@@ -426,12 +426,6 @@ eritropoietina
 Erythropoietin
 linea
 line
-iPhone
-iPhone
-5S
-5S
-Apple
-Apple
 incorpora
 incorporate, add
 lector
@@ -446,7 +440,7 @@ seguridad
 security
 nuevo
 new
-primer ---
+primer
 first
 ministro
 minister, secretary
