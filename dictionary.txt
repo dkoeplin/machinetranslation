@@ -5,13 +5,13 @@ current, present
 adicta
 addicted, attached
 adivinar
-to guess
+guess
 admirados
-to admire
+admire
 adquisición
 acquisition
 aguardaba
-to wait for, to await, to expect
+wait for, await, expect
 ahora
 now
 al
@@ -19,9 +19,9 @@ to the
 alcalde
 mayor
 alertado
-to alert
+alert
 algún
-one, some
+some
 amigos
 friends
 amistad
@@ -31,23 +31,23 @@ ad, announcement
 apenas
 as soon as, hardly
 apoyó
-supported, to support
+support
 apriesa
 quickly
 arma
 weapon
 arrestadas
-to arrest, intrepid, bold
+arrest, intrepid, bold
 asesinadas
-to murder
+murder
 atado
-tied, to tie
+tie
 augusto
 August
 aunque
 although
 avisó
-notice, warning
+notice, warn
 barrera
 barrier
 bien
@@ -65,9 +65,9 @@ as, like
 compañía
 company
 compraba
-to buy
+buy
 comunique
-to communicate
+communicate
 con
 with
 consejo
@@ -77,19 +77,19 @@ against
 cosa
 thing
 creo
-to create
+believe
 cuando
 when
 dar
-to give
+give
 datos
 data
 de
 of, from
 declaraba
-to declare, to state
+declare
 dejaba
-to leave
+leave
 del
 of the
 desasosiego
@@ -125,7 +125,7 @@ in love, lover
 encaje
 lace
 encarceladas
-to jail, to imprison
+jail, imprison
 entre
 between
 es
@@ -135,15 +135,15 @@ school
 especialmente
 especially
 esta
-to be
+be
 estaba
-to be
+be
 estarse
-to be
+be
 estas
-to be
+be
 experimenta
-to experiment, to try out, to experience
+experiment, try out, experience
 extraña
 strange
 facebook
@@ -151,33 +151,33 @@ Facebook
 fernando
 Fernando
 frenando
-to slow down, to stop, to brake
+slow down, stop, brake
 fuego
 fire
 fundador
 founder
 ganado
-cattle, to win
+cattle, win
 gran
 great
 gusta
-to like
+like
 ha
-to have
+have
 habría
 would have
 había
-to have
+have
 hacer
-to do, to make
+do, make
 han
-to have
+have
 hasta
 until
 hay
-there is, there are
+there
 heridos
-to hurt
+hurt
 ido
 gone
 impacto
@@ -185,7 +185,7 @@ impact
 improviso
 unexpected
 inicia
-to start, to begin
+start, begin
 instantánea
 snapshot
 la
@@ -193,11 +193,11 @@ the
 las
 the
 le
-to him, to her
+him, her
 les
 them
 llamaban
-to call
+call
 llamativa
 striking
 lo
@@ -211,7 +211,7 @@ place
 mandatario
 leader
 mantiene
-to maintain, to keep
+maintain, keep
 mauricio
 Mauricio
 me
@@ -225,7 +225,7 @@ millions
 modelo
 model
 mover
-to move
+move
 movido
 moved
 mudanza
@@ -243,7 +243,7 @@ Olympic
 opositor
 opponent
 oír
-to hear, to listen
+hear, listen
 pastores
 shepherd
 pegada
@@ -257,7 +257,7 @@ legs
 poco
 little, few
 podían
-to be able
+be able to
 por
 by
 porque
@@ -267,33 +267,33 @@ preliminary
 primera
 first
 privanza
-favour
+favor
 problema
 problem
 pudo
-to be able to
+be able to
 pues
 well, then
 que
 that
 quedaron
-to stay, to remain
+stay, remain
 quedo
-to stay, to remain
+stay, remain
 quien
 who
 quito
-to remove
+remove
 razones
-to reason, to argue
+reason, argue
 reportados
-to report
+report
 resulta
 result
 rodas
 Rodas
 saltos
-to jump, to leap
+jump, leap
 se
 himself, herself, itself
 secreta
@@ -305,11 +305,11 @@ week
 semanas
 weeks
 sentí
-to feel, to be sorry, to symphatise
+feel, be sorry, symphatise
 ser
-to be
+be
 serlo
-to be
+be
 servicio
 service
 servicios
@@ -317,7 +317,7 @@ services
 similar
 similar
 soy
-to be
+be
 su
 his, her
 suelo
@@ -335,7 +335,7 @@ TV set
 tendederos
 clothes line
 tenía
-to have, to get, to be
+have, get, be
 tiene
 has
 todas
@@ -347,9 +347,9 @@ around
 tras
 after
 tratarse
-to try, to treat
+try, treat
 traía
-to bring
+bring
 tres
 three
 un
@@ -361,13 +361,13 @@ one
 vecino
 neighbor
 vestidos
-to dress
+dress
 vez
 time
 viaje
 trip
 vieron
-to see, to watch, to look at
+see, watch, look at
 viviendas
 housing, home
 votos
@@ -385,7 +385,7 @@ unique, only
 xenón
 xenon
 utiliza
-to use
+use
 habitualmente
 usually
 clínicas
@@ -407,7 +407,7 @@ colorless
 detectable
 detectable
 controles
-to control, control
+control, control
 dopaje
 doping
 dosis
@@ -417,7 +417,7 @@ very
 concentradas
 concentrated
 estimula
-to encourage, to estimulate
+encourage, estimulate
 secreción
 secretion
 hormona
@@ -427,7 +427,7 @@ Erythropoietin
 linea
 line
 incorpora
-to incorporate, to add
+incorporate, add
 lector
 reader
 huella
@@ -457,13 +457,13 @@ lots, much
 nos
 us
 echan
-to throw, to fire
+throw, fire
 cara
 face
 consideran
-to consider
+consider
 falta
-mistake, error, to miss, to fail
+mistake, error, miss, fail
 experiencia
 experience
 política
@@ -485,11 +485,11 @@ important
 Chile
 Chile
 denunciado
-to report, to accuse
+report, accuse
 desde
 from
 hace
-to do
+do
 unos
 ones
 meses
@@ -501,7 +501,7 @@ strange
 aviones
 plane
 tripulados
-to man
+man
 regiones
 regions
 sur
@@ -519,11 +519,11 @@ after
 revolución
 revolution
 eliminara
-to remove, to eliminate
+remove, eliminate
 prácticamente
 practically
 impuestos
-to impose
+impose
 nueva
 new
 ley
@@ -533,7 +533,7 @@ tributary, tax
 busca
 search
 revertir
-to revert
+revert
 esa
 that
 situación
@@ -541,8 +541,105 @@ situation, location
 para
 for, to
 respaldar
-to endorse, to support
+endorse, support
 gastos
 expenses
 sociales
 social
+estrategia
+strategy
+aplicada
+apply
+fondos
+deep, funds
+pensiones
+pensions
+tiende
+stretch, hang out
+esencialmente
+essentially
+mercados
+buy
+financieros
+financial, financier
+absorban
+absorb
+ahorro
+informe
+report
+menciona
+mention
+nada
+nothing
+esto
+this
+Unión
+Union
+European
+European
+proporciona
+provide
+asimismo
+likewise, also
+ayuda
+help
+humanitaria
+humanitarian, philanthropic
+masiva
+massive
+interior
+interior
+exterior
+exterior
+Afganistán
+Afghanistan
+respecto
+respect
+primer
+parámetro
+parameter
+ha
+has
+recordado
+remember
+Zapatero
+Zapatero
+perdieron
+empleos
+employment
+euros
+euro
+ingresos
+revenue
+públicos
+public
+teoría
+theory
+zonas
+zone, area
+costa
+coast, cost
+todavía
+still
+son
+are, sound
+públicas
+public
+práctica
+practice
+sólo
+only
+posible
+possible
+bañarse
+bathe
+Mar
+Sea
+Muerto
+Death
+través
+misfortune, through, crossbeam, across
+playas
+beach
+privadas
+private
