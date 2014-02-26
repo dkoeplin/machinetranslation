@@ -60,6 +60,9 @@ public class Translator {
          System.exit(1);
       }
       
+      for (TaggedSentence sentence : sentences) 
+         sentence.print(false);
+      
       // Translate sentences and output to terminal
       List<TaggedSentence> translatedSentences = translator.directTranslation(sentences);
       for (TaggedSentence sentence : translatedSentences)

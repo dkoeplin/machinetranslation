@@ -20,7 +20,6 @@ public class TreeTagger {
    }
    
    public TaggedSentence tagSentence(String sentence) {
-      System.out.println(sentence);
       TaggedSentence output = new TaggedSentence();
       try {
          sentence.replaceAll("\"", "\\\"");
@@ -37,14 +36,20 @@ public class TreeTagger {
          // read the output from the command
          String s = null;
          while ((s = stdIn.readLine()) != null) {
-            String[] tags = s.split("\\s+");
+            String[] tags = s.split("\t");
             String word = tags[0];
             String tag = tags[1];
             int start = sentence.indexOf(word);
             int end   = start + word.length();
             
             output.addWord(sentence.substring(0, start), "");
-            output.addWord(word, tag);
+            if (word.contains(" ")) {
+               String [] words = word.split(" ");
+               for (int i = 0; i < words.length; i++)
+                  output.addWord(words[i], tag);
+            }
+            else 
+               output.addWord(word, tag);
             sentence = sentence.substring(end);
          }
          stdIn.close();
