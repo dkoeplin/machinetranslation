@@ -175,7 +175,7 @@ have
 hasta
 until
 hay
-there is, there are
+there
 heridos
 hurt
 ido
@@ -267,7 +267,7 @@ preliminary
 primera
 first
 privanza
-favour
+favor
 problema
 problem
 pudo
@@ -546,3 +546,100 @@ gastos
 expenses
 sociales
 social
+estrategia
+strategy
+aplicada
+apply
+fondos
+deep, funds
+pensiones
+pensions
+tiende
+stretch, hang out
+esencialmente
+essentially
+mercados
+buy
+financieros
+financial, financier
+absorban
+absorb
+ahorro
+informe
+report
+menciona
+mention
+nada
+nothing
+esto
+this
+Unión
+Union
+European
+European
+proporciona
+provide
+asimismo
+likewise, also
+ayuda
+help
+humanitaria
+humanitarian, philanthropic
+masiva
+massive
+interior
+interior
+exterior
+exterior
+Afganistán
+Afghanistan
+respecto
+respect
+primer
+parámetro
+parameter
+ha
+has
+recordado
+remember
+Zapatero
+Zapatero
+perdieron
+empleos
+employment
+euros
+euro
+ingresos
+revenue
+públicos
+public
+teoría
+theory
+zonas
+zone, area
+costa
+coast, cost
+todavía
+still
+son
+are, sound
+públicas
+public
+práctica
+practice
+sólo
+only
+posible
+possible
+bañarse
+bathe
+Mar
+Sea
+Muerto
+Death
+través
+misfortune, through, crossbeam, across
+playas
+beach
+privadas
+private
