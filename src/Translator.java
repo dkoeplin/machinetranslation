@@ -54,7 +54,8 @@ public class Translator {
          
          input.close();
       }
-      catch(IOException e) {
+      catch(Exception e) {
+         System.out.println("Failed while trying to tag sentences");
          e.printStackTrace();
          System.exit(1);
       }

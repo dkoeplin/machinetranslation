@@ -43,7 +43,7 @@ public class TreeTagger {
             int start = sentence.indexOf(word);
             int end   = start + word.length();
             
-            output.addWord(sentence.substring(0, start), "space");
+            output.addWord(sentence.substring(0, start), "");
             output.addWord(word, tag);
             sentence = sentence.substring(end);
          }
