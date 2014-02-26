@@ -21,7 +21,7 @@ mayor
 alertado
 alert
 algún
-one, some
+some
 amigos
 friends
 amistad
@@ -31,7 +31,7 @@ ad, announcement
 apenas
 as soon as, hardly
 apoyó
-supported, support
+support
 apriesa
 quickly
 arma
@@ -41,13 +41,13 @@ arrest, intrepid, bold
 asesinadas
 murder
 atado
-tied, tie
+tie
 augusto
 August
 aunque
 although
 avisó
-notice, warning
+notice, warn
 barrera
 barrier
 bien
@@ -77,7 +77,7 @@ against
 cosa
 thing
 creo
-create
+believe
 cuando
 when
 dar
@@ -87,7 +87,7 @@ data
 de
 of, from
 declaraba
-declare, state
+declare
 dejaba
 leave
 del
