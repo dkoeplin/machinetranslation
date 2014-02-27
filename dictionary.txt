@@ -1,93 +1,89 @@
 a
-to
+to, on, by, at, per
 actual
-current, present
+current, present, topical
 adicta
-addicted, attached
+addicted/ADJ, attached/ADJ, committed/ADJ, addict/N
 adivinar
-guess
+guess, foretell, divine
 admirados
-admire
+admire, be amazed
 adquisición
-acquisition
+acquisition, purchase
 aguardaba
 wait for, await, expect
 ahora
-now
+now/ADV, now/C, but/C
 al
 to the
 alcalde
 mayor
 alertado
-alert
+alert, alarm, be alert
 algún
-some
+some, any
 amigos
-friends
+friends/N, friendly/ADJ
 amistad
 friendship
 anuncio
 ad, announcement
 apenas
-as soon as, hardly
+as soon as, hardly, scarcely, only
 apoyó
-support
+support/N, backing/N, supported/V
 apriesa
-quickly
+quickly, in a hurry
 arma
 weapon
 arrestadas
-arrest, intrepid, bold
+intrepid/ADJ, bold/ADJ, audacious/ADJ, arrested/V
 asesinadas
 murder
 atado
-tie
-augusto
-August
+tied/ADJ, bundle/N, parcel/N, tied/V
 aunque
 although
 avisó
-notice, warn
-barrera
-barrier
+notice/N, warning/N, notified/V, advised/V, warned/V
 bien
-well
+well/ADV, good/N, good/ADJ
 candidato
 candidate
 caso
-case
+case, event
 causa
-cause
+cause, reason, case
 caída
-fall
+fall, drop
 como
-as, like
+as/ADV, like/ADV, about/ADV, as/C, if/C, that/C, and/C
 compañía
 company
 compraba
-buy
+buy, purchase
 comunique
-communicate
+communicate, convey, transmit
 con
-with
+with, despite, by
 consejo
-advice, council
+advice, council, meeting
 contra
-against
+against/P, con/N, against/ADV
 cosa
 thing
 creo
-believe
+believe, think, create, make
 cuando
-when
+when/ADV, if/C, during/P, even if/C, even though/C
 dar
-give
+give, yield, deal, strike
 datos
 data
 de
-of, from
+of, from, as, with, about
 declaraba
-declare
+declare, state, say
 dejaba
 leave
 del
@@ -95,19 +91,19 @@ of the
 desasosiego
 uneasiness, restlessness, unrest
 desposado
-groom
+groom/N, bridge/N, handcuffed/ADJ, married/V
 dicho
-said
+aforementioned/ADJ, saying/N, expression/N, declaration/N
 docenas
-dozen
+dozen/N, twelfth/ADJ
 don
-el capo
+gift, present
 dos
-two
+two, second/ADJ
 durante
 during
 dólares
-dollar
+dollars/N, smooth/V
 el
 the
 electorcal
@@ -115,23 +111,23 @@ electoral
 emergencia
 emergency
 empleados
-employees
+employees/N, employ/V, use/V, spend/V
 empresa
 business, company
 en
-in
+in, into, by
 enamorado
-in love, lover
+in love/ADJ, lover/N
 encaje
-lace
+lace, fit, addition
 encarceladas
 jail, imprison
 entre
-between
+between/P, amongst/P, meanwhile/ADV
 es
 is
 escolares
-school
+school, pupil
 especialmente
 especially
 esta
@@ -145,23 +141,19 @@ be
 experimenta
 experiment, try out, experience
 extraña
-strange
-facebook
-Facebook
-fernando
-Fernando
+strange, foreign
 frenando
 slow down, stop, brake
 fuego
 fire
 fundador
-founder
+founder/N, fouding/ADJ
 ganado
-cattle, win, won
+cattle/N, win/V, won/VLadj
 gran
 great
 gusta
-like
+like, love
 habría
 would have
 había
@@ -171,21 +163,21 @@ do, make
 han
 have
 hasta
-until
+until/P, up to/P, down to/P, even/ADV
 hay
-there
+there is, there are
 heridos
-hurt
+hurt, wounded
 ido
-gone
+gone/ADJ, went/V
 impacto
 impact
 improviso
-unexpected
+unexpected, unforeseen
 inicia
 start, begin
 instantánea
-snapshot
+snapshot, instant
 la
 the
 las
@@ -195,7 +187,7 @@ him, her
 les
 them
 llamaban
-call
+call, phone
 llamativa
 striking
 lo
@@ -205,17 +197,15 @@ local
 los
 the
 lugar
-place
+place, town
 mandatario
-leader
+leader, representative
 mantiene
 maintain, keep
-mauricio
-Mauricio
 me
-me
+me, I
 medios
-means
+means/N, half/ADJ, medium/ADJ, average/ADJ
 mensajería
 messaging, courier service
 millones
@@ -227,17 +217,17 @@ move
 movido
 moved
 mudanza
-alteration
+alteration, change
 más
 more
 nacional
 national
 no
-no
+no/N, not/NEG, not/ADV, no/ADV
 oficialista
 government
 olímpicos
-Olympic
+Olympic/ADJ, Olympics/N
 opositor
 opponent
 oír
@@ -247,19 +237,19 @@ shepherd
 pegada
 appeal
 pensamientos
-thoughts
+thoughts, ideas
 personas
-persons
+people
 piernas
 legs
 poco
-little, few
+little, few, not many, not much
 podían
-be able to
+be able to/V, power/N, authority/N
 por
-by
+by, through, for, per, because of
 porque
-because
+because/C, why/N, for what reason/N, for the reason that/N
 preliminares
 preliminary
 primera
@@ -269,15 +259,15 @@ favor
 problema
 problem
 pudo
-be able to
+could, can
 pues
-well, then
+well, then, since, as
 que
-that
+that, which
 quedaron
 stay, remain
 quedo
-stay, remain
+quiet/ADJ, soft/ADJ, quietly/ADV, softly/ADV
 quien
 who
 quito
@@ -287,23 +277,21 @@ reason, argue
 reportados
 report
 resulta
-result
-rodas
-Rodas
+result, effect
 saltos
-jump, leap
+jump, leap, dive
 se
 himself, herself, itself
 secreta
 secret
 según
-according to, as
+according to/P, as/C, depending on/P
 semana
 week
 semanas
 weeks
 sentí
-feel, be sorry, symphatise
+feel, be sorry about, symphatise
 ser
 be
 serlo
@@ -321,35 +309,35 @@ his, her
 suelo
 ground, floor
 sus
-their
+their, his, her, its
 sí
 yes
 tan
 so
 tanto
-so
+so much/P, so much/ADJ, as much/P, point/N, goal/N
 televisor
-TV set
+television
 tendederos
-clothes line
+clothesline
 tenía
 have, get, be
 tiene
 has
 todas
-all
+all/P, entire/P, whole/P, entirely/ADV, totally/ADV, completely/ADV
 todos
 everybody
 tornó
-around
+around/P, about/P, drill/N, potter's wheel/N, lathe/N
 tras
-after
+after/P, behind/P, bottom/N
 tratarse
-try, treat
+tried, treated
 traía
 bring
 tres
-three
+three/N, three/ADJ, third/ADJ
 un
 a
 una
@@ -357,13 +345,13 @@ a
 uno
 one
 vecino
-neighbor
+neighbor/N, neighboring/ADJ
 vestidos
-dress
+dress, wear
 vez
 time
 viaje
-trip
+trip, journey
 vieron
 see, watch, look at
 viviendas
@@ -373,7 +361,7 @@ vote
 y
 and
 yo
-i
+I, me, myself
 ámbito
 field, scope
 él
@@ -391,21 +379,21 @@ clinics
 narcótico
 narcotic
 pero
-but
+but/C, except/C, yet/C, snag/N, fault/N
 además
 besides, in addition, moreover
 gas
-gas
+gas, fumes
 inodoro
-toilet
+toilet/N, odorless/ADJ
 e
 and
 incoloro
 colorless
 detectable
-detectable
+perceptible
 controles
-control, control
+control, check
 dopaje
 doping
 dosis
@@ -415,7 +403,7 @@ very
 concentradas
 concentrated
 estimula
-encourage, estimulate
+encourages, stimulates
 secreción
 secretion
 hormona
@@ -425,11 +413,11 @@ Erythropoietin
 linea
 line
 incorpora
-incorporate, add
+incorporates, adds
 lector
 reader
 huella
-footprint
+footprint, mark
 digital
 digital
 medida
@@ -451,7 +439,7 @@ representative, delegate
 algo
 something, a little
 muchos
-lots, much
+a lot, much
 nos
 us
 echan
@@ -459,35 +447,31 @@ throw, fire
 cara
 face
 consideran
-consider
+consider, think
 falta
-mistake, error, miss, fail
+mistake/N, error/N, miss/N, fail/N, shortage/N, deficient/ADJ
 experiencia
 experience
 política
 politics, policy
 varios
-vario
+pink/N, minnow/N, varied/ADJ
 miembros
 members
 comunidades
 communities
-mapuche
-Mapuche
 grupo
 group
 indígena
-indigenous
+indigenous, native
 importante
-important
-Chile
-Chile
+important, considerable
 denunciado
 report, accuse
 desde
-from
+from, since
 hace
-do
+do, make
 unos
 ones
 meses
@@ -495,21 +479,21 @@ months
 avistamiento
 sighting
 extraños
-strange
+strange, foreign
 aviones
-plane
+plane, airplane
 tripulados
 man
 regiones
 regions
 sur
-south
+south/N, south/ADJ, southern/ADJ
 país
 country
 sin
 without
 cultura
-culture
+culture, knowledge
 fiscal
 fiscal
 después
@@ -517,17 +501,17 @@ after
 revolución
 revolution
 eliminara
-remove, eliminate
+removed, eliminated
 prácticamente
 practically
 impuestos
-impose
+impose/V, tax/V, tax/N
 nueva
-new
+new/ADJ, news/N
 ley
 law
 tributaria
-tributary, tax
+tax/N, taxable/ADJ
 busca
 search
 revertir
@@ -535,23 +519,23 @@ revert
 esa
 that
 situación
-situation, location
+situation, location, position
 para
 for, to
 respaldar
-endorse, support
+endorse/V, support/V, learning-stock/N
 gastos
 expenses
 sociales
-social
+social/ADJ, reunion/N
 estrategia
 strategy
 aplicada
-apply
+applied/ADJ, applied/V
 fondos
-deep, funds
+bottom, funds
 pensiones
-pensions
+pensions/N, bother/V, tax/V
 tiende
 stretch, hang out
 esencialmente
@@ -559,29 +543,29 @@ essentially
 mercados
 buy
 financieros
-financial, financier
+financial/ADJ, financier/N
 absorban
 absorb
 ahorro
 savings
 informe
-report
+report/N, formless/ADJ
 menciona
-mention
+mentioned
 nada
 nothing
 esto
 this
 Unión
 Union
-European
+Europea
 European
 proporciona
 provide
 asimismo
 likewise, also
 ayuda
-help
+help, assistance, aid
 humanitaria
 humanitarian, philanthropic
 masiva
@@ -593,39 +577,37 @@ exterior
 Afganistán
 Afghanistan
 respecto
-respect
+respect/N, with respect to/ADV
 primer
 first
 parámetro
 parameter
 ha
-has
+has/V, ha/ITJN
 recordado
 remember
-Zapatero
-Zapatero
 perdieron
-lose, miss, waste
+lost, missed, wasted
 empleos
 employment
 euros
-euro
+euros
 ingresos
-revenue
+revenue, income, admission
 públicos
 public
 teoría
 theory
 zonas
-zone, area
+zones, areas
 costa
 coast, cost
 todavía
-still
+still, even
 son
-are, sound
+are/V, sound/N
 públicas
-public
+public/ADJ, publish/V
 práctica
 practice
 sólo
@@ -634,13 +616,13 @@ posible
 possible
 bañarse
 bathe
-Mar
-Sea
-Muerto
-Death
+mar
+sea
+muerto
+death
 través
-misfortune, through, crossbeam, across
+misfortune/N, through/P, crossbeam/N, across/P
 playas
-beach
+beaches
 privadas
-private
+private/ADJ, bathroom/N

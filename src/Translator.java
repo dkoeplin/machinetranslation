@@ -26,15 +26,18 @@ public class Translator {
       TaggedWord prevWord = new TaggedWord("","");
       while (sentence.hasNext()) {
          TaggedWord f = sentence.next();
-         List<TaggedWord> possibleTranslations = dictionary.getWordTranslations(f);
-         if (possibleTranslations.isEmpty()) {
-            System.out.println("No translations found for " + f.word);
-            System.exit(-1);
-         }
-         TaggedWord trans = targetModel.chooseBestGreedy(prevWord, possibleTranslations);
-         translation.addWord(trans);
-         if (trans.isAWord())
+         if (f.isAWord()) {
+            List<TaggedWord> possibleTranslations = dictionary.getWordTranslations(f);
+            if (possibleTranslations.isEmpty()) {
+               System.out.println("No translation available for " + f.word + "/" + f.POS);
+            }
+            //System.out.println("Translating " + prevWord.word + " [" + f.word + "]");
+            TaggedWord trans = targetModel.chooseBestGreedy(prevWord, possibleTranslations);
+            translation.addWord(trans);
             prevWord = trans;
+         }
+         else
+            translation.addWord(f);
       }
       
       return translation;
@@ -138,7 +141,7 @@ public class Translator {
 	}
    
    public static void main(String[] args) {  
-      TaggedDictionary dictionary = new TaggedDictionary("dictionary.txt");
+      TaggedDictionary dictionary = new TaggedDictionary("dictionary.txt", true);
       LanguageModel model = new LanguageModel("bigrams.txt");
       Translator translator = new Translator(dictionary, model);
       TreeTagger spanishPOS = new TreeTagger(System.getProperty("user.dir") + "/TreeTagger",
@@ -150,12 +153,13 @@ public class Translator {
       
       // Translate sentences and output to terminal
       for (TaggedSentence sentence : spanish_dev) {
+          sentence.print(true);
           sentence.print();
           translator.noBeforeVerb(sentence);
-          translator.randomTranslation(sentence).print();
+          //translator.randomTranslation(sentence).print();
           translator.processFigures(sentence);
           translator.switchNounAndAdjective(sentence);
-          translator.randomTranslation(sentence).print();
+          //translator.randomTranslation(sentence).print();
           translator.modelTranslation(sentence).print();
           System.out.println("");
       }

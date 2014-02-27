@@ -39,7 +39,7 @@ public class TaggedDictionary {
                E.add(new TaggedWord(trans, pos));
             }
             translations.put(f.toLowerCase(), E);
-            if (verbose) { System.out.print(f + "=> "); for (TaggedWord trans : E) { System.out.print(trans.word + ", "); } System.out.print("\n");} 
+            if (verbose) { System.out.print(f + "=> "); for (TaggedWord trans : E) { System.out.print(trans.word + "/" + trans.POS + ", "); } System.out.print("\n");} 
             f = input.readLine();
          }
          input.close();
@@ -64,10 +64,8 @@ public class TaggedDictionary {
       if (f.isAWord() && translations.containsKey(f.word.toLowerCase())) {
          List<TaggedWord> list = translations.get(f.word.toLowerCase());
          for (TaggedWord e : list) {
-            if (e.samePOS(f))
+            if (f.samePOS(e))
                E.add(new TaggedWord(restoreCapitalization(f.word, e.word), e.POS));
-            else if (e.POSisUnk()) 
-               E.add(new TaggedWord(restoreCapitalization(f.word, e.word), f.POS));
          }
       }
       else 

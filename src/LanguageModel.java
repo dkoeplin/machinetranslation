@@ -13,7 +13,7 @@ public class LanguageModel {
    protected int V;
    protected double logV;
    
-   private boolean stupidBackoff = true;
+   private boolean stupidBackoff = false;
 
    private String createBigram(String w1, String w2) {
       return w1 + " " + w2;
@@ -54,16 +54,18 @@ public class LanguageModel {
    public TaggedWord chooseBestGreedy(TaggedWord prevWord, List<TaggedWord> possibleWords) {
       double highScore = Double.NEGATIVE_INFINITY;
       if (possibleWords.isEmpty()) {
-         System.out.println("No translation available for current word (after " + prevWord.word + ")");
-         return new TaggedWord("","");
+         //System.out.println("No translation available for current word (after " + prevWord.word + ")");
+         return new TaggedWord("UNK","");
       }
       TaggedWord choice = possibleWords.get(0);
       if (possibleWords.size() < 2)
          return choice;
       
       for (TaggedWord candidate : possibleWords) {
-         double score = scorebigram(prevWord.word, candidate.word);
-         //System.out.println(candidate.word + ": " + score);
+         String[] previousWord = prevWord.word.split("\\s+");
+         
+         double score = scorebigram(previousWord[previousWord.length-1], candidate.word);
+         //System.out.println("\t" + candidate.word + ": " + score);
          if (score > highScore) {
             highScore = score;
             choice = candidate;

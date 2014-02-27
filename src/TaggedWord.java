@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 public class TaggedWord {
    private static final String punct = "PCT";
    private static final String space = "SPC";
-   private static final String unk   = "UNK";
+   private static final String wild   = "ANY";
    
    private static Pattern wordPattern = Pattern.compile("[\\p{L}\\w].*[\\p{L}\\w]|[\\w\\p{L}]");
    private static Pattern spcPattern = Pattern.compile("\\s+");
@@ -17,17 +17,25 @@ public class TaggedWord {
       word = w; 
       Matcher wfind = wordPattern.matcher(w);
       Matcher sfind = spcPattern.matcher(w);
-      POS = (wfind.find()) ? p : 
-            (sfind.find()) ? space : 
-            (w.equals("")) ? unk : punct;
+
+      if (wfind.find()) 
+         POS = (p.equals("")) ? wild : p;
+      else
+         POS = (sfind.find()) ? space : punct;
    }
    
+   /* Does the given have the same POS as some other word?
+      POS are made to be somewhat general in the dictionary in some cases 
+      so they are considered to be matching if the tag from the tagger contains
+      the tag from the dictionary */
    public boolean samePOS(TaggedWord other) {
-      return this.POS.equals(other.POS);
+      if (other.POSisUnk()) 
+         return true;
+      return this.POS.contains(other.POS);
    }
    
    public boolean POSisUnk() {
-      return this.POS.equals("") || this.POS.equals(unk);
+      return this.POS.equals("") || this.POS.equals(wild);
    }
    
    public boolean isAWord() {
