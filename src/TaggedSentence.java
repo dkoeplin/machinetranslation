@@ -13,6 +13,10 @@ public class TaggedSentence {
       sentence = new ArrayList<TaggedWord>();
    }
    
+   public List<TaggedWord> getSentence() {
+	   return sentence;
+   }
+   
    public void initIter() {
       iterator = sentence.iterator();
    }
@@ -24,6 +28,7 @@ public class TaggedSentence {
       if (iterator == null) {return null;}
       return iterator.next();
    }
+   
     
    public void addWord(String word, String POS) {
       if (word != null && !word.equals(""))

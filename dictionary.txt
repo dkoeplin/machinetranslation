@@ -565,6 +565,7 @@ financial, financier
 absorban
 absorb
 ahorro
+savings
 informe
 report
 menciona
