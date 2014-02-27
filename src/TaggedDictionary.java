@@ -58,29 +58,35 @@ public class TaggedDictionary {
          
       return output;
    }
-   
    public List<TaggedWord> getWordTranslations(TaggedWord f) {
-      List<TaggedWord> E = new ArrayList<TaggedWord>();
-      if (f.isAWord() && translations.containsKey(f.word.toLowerCase())) {
-         List<TaggedWord> list = translations.get(f.word.toLowerCase());
-         for (TaggedWord e : list) {
-            if (f.samePOS(e))
-               E.add(new TaggedWord(restoreCapitalization(f.word, e.word), e.POS));
+      return getWordTranslations(f, true);
+   }
+   public List<TaggedWord> getWordTranslations(TaggedWord f, boolean matchPOS) {
+      if (matchPOS) {
+         List<TaggedWord> E = new ArrayList<TaggedWord>();
+         if (f.isAWord() && translations.containsKey(f.word.toLowerCase())) {
+            List<TaggedWord> list = translations.get(f.word.toLowerCase());
+            for (TaggedWord e : list) {
+               if (f.samePOS(e))
+                  E.add(new TaggedWord(restoreCapitalization(f.word, e.word), e.POS));
+            }
          }
+         else 
+            E.add(f);
+         return E;
       }
       else 
-         E.add(f);
-      return E;
+         return translations.get(f.word.toLowerCase());
    }
    
    public TaggedWord getRandomTranslation(TaggedWord f) {
-      List<TaggedWord> E = getWordTranslations(f);
-      if (E.size() > 1)
-         return E.get(rand.nextInt(E.size()));
+      List<TaggedWord> E = getWordTranslations(f, false);
+      if (E == null || E.isEmpty())
+         return f;
       else if (E.size() == 1)
          return E.get(0);
       else
-         return f;
+         return E.get(rand.nextInt(E.size()));
    }
    
 }

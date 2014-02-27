@@ -31,7 +31,7 @@ ad, announcement
 apenas
 as soon as, hardly, scarcely, only
 apoyó
-support/N, backing/N, supported/V
+support/N, backing/N, gave support/V, gave backing/V
 apriesa
 quickly, in a hurry
 arma
@@ -61,7 +61,7 @@ as/ADV, like/ADV, about/ADV, as/C, if/C, that/C, and/C
 compañía
 company
 compraba
-buy, purchase
+bought, purchased, took over
 comunique
 communicate, convey, transmit
 con
@@ -87,13 +87,13 @@ declare, state, say
 dejaba
 leave
 del
-of the
+of the, than
 desasosiego
 uneasiness, restlessness, unrest
 desposado
 groom/N, bridge/N, handcuffed/ADJ, married/V
 dicho
-aforementioned/ADJ, saying/N, expression/N, declaration/N
+aforementioned/ADJ, saying/N, expression/N, declaration/N, said/V, declared/V
 docenas
 dozen/N, twelfth/ADJ
 don
@@ -119,7 +119,7 @@ in, into, by
 enamorado
 in love/ADJ, lover/N
 encaje
-lace, fit, addition
+lace, fit
 encarceladas
 jail, imprison
 entre
@@ -175,7 +175,7 @@ impact
 improviso
 unexpected, unforeseen
 inicia
-start, begin
+starts, begins
 instantánea
 snapshot, instant
 la
@@ -191,7 +191,7 @@ call, phone
 llamativa
 striking
 lo
-it
+it/P, the/ART, it/N
 locales
 local
 los
@@ -209,7 +209,7 @@ means/N, half/ADJ, medium/ADJ, average/ADJ
 mensajería
 messaging, courier service
 millones
-millions
+million
 modelo
 model
 mover
@@ -235,7 +235,7 @@ hear, listen
 pastores
 shepherd
 pegada
-appeal
+glued/V, punch/N, appeal/N
 pensamientos
 thoughts, ideas
 personas
@@ -303,7 +303,7 @@ services
 similar
 similar
 soy
-be
+am
 su
 his, her
 suelo
@@ -315,7 +315,7 @@ yes
 tan
 so
 tanto
-so much/P, so much/ADJ, as much/P, point/N, goal/N
+so much/P, so much/ADJ, as much/P, point/N, goal/N, so/ADV, much/ADV, both/ADV
 televisor
 television
 tendederos
@@ -537,11 +537,11 @@ bottom, funds
 pensiones
 pensions/N, bother/V, tax/V
 tiende
-stretch, hang out
+stretches, tends, spreads, extends, lays out, aims
 esencialmente
 essentially
 mercados
-buy
+buy/V, markets/N
 financieros
 financial/ADJ, financier/N
 absorban
@@ -577,7 +577,7 @@ exterior
 Afganistán
 Afghanistan
 respecto
-respect/N, with respect to/ADV
+with respect/N, regarding/N
 primer
 first
 parámetro
@@ -585,7 +585,7 @@ parameter
 ha
 has/V, ha/ITJN
 recordado
-remember
+remembered, recalled
 perdieron
 lost, missed, wasted
 empleos

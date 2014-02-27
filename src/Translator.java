@@ -89,15 +89,8 @@ public class Translator {
 		   TaggedWord taggedWord = sentence.get(i);
 		   String w = taggedWord.word;
 		   m = numberPattern.matcher(w);
-		   while (m.find()) {
-			   //System.out.println("old figures: " + w);
-			   w = w.replace(".", ",");
-			   //w.replace(",", "."); //
-			   TaggedWord newWord = new TaggedWord(w, taggedWord.POS);
-			   sentence.set(i, newWord);
-			   //System.out.println("new figures: " + w);
-		   }
-		  
+		   while (m.find())
+			   sentence.set(i, new TaggedWord(w.replace(".", ","), taggedWord.POS));
 	   }
 	   
 	}
@@ -120,23 +113,54 @@ public class Translator {
 	   }
 	}
 	
-	public void switchNounAndAdjective(TaggedSentence t) {
-		List<TaggedWord> sentence = t.getSentence();
+   /* Given a sequence of tagged words with possible sequence of nouns followed
+    * by adjectives (e.g. N1 N2 N3 A1 A2 A3), flips sequence of adjectives and moves
+    * it before the sequence of nouns
+    */
+	
+	public void rearrangeModifiers(TaggedSentence s) {
+		List<TaggedWord> sentence = s.getSentence();
+		
+		boolean targetIsNouns = false;
+		boolean modifiers = false;
+		
+		List<TaggedWord> curTarg = new ArrayList<TaggedWord>();
+		List<TaggedWord> curMod = new ArrayList<TaggedWord>();
+		List<Integer> locs = new ArrayList<Integer>();
+		
 		for (int i = 0; i < sentence.size(); i++) {
-			TaggedWord current = sentence.get(i);
-			if (i > 0 && current.POS.equals("ADJ")) {
-				//System.out.println("adj: " + current.word);
-				TaggedWord previous = sentence.get(i - 2);
-				//System.out.println("noun: " + previous.word);
-				if (previous.POS.equals("NC")) {
-					System.out.println("noun: " + previous.word);
-					TaggedWord newCurrent = new TaggedWord(previous.word, previous.POS);
-					TaggedWord newPrevious = new TaggedWord(current.word, current.POS);
-					
-					sentence.set(i, newCurrent);
-					sentence.set(i-2, newPrevious);
-				}
-			}
+		   TaggedWord current = sentence.get(i);
+		   boolean nounAdjStopper = current.isAWord() && targetIsNouns && !current.isAdj() && !current.isNoun();
+		   boolean verbAdvStopper = current.isAWord() && !targetIsNouns && !current.isAdv() && !current.isVerb();
+		   boolean endOfPhrase = current.isPunct() || i == sentence.size() - 1;
+	      // If we've reached a word that is not a correct modifier or a target, a punction mark, or the end of the sentence
+         if ((nounAdjStopper || verbAdvStopper || endOfPhrase) && (!curTarg.isEmpty() || !curMod.isEmpty()) ) {
+            if (!curTarg.isEmpty() && !curMod.isEmpty()) {
+               for (int pos = 0; pos < locs.size(); pos++) {
+                  int loc = locs.get(pos);
+                  if (pos >= curMod.size())
+                     sentence.set(loc, curTarg.get(pos - curMod.size()));
+                  else
+                     sentence.set(loc, curMod.get(pos));
+               }
+            }
+            curTarg.clear();
+            curMod.clear();
+            locs.clear();
+            modifiers = false;
+         }
+		   
+		   if (!modifiers && (current.isNoun() || current.isVerb()) ) {
+		      curTarg.add(current);
+		      locs.add(i);
+		      targetIsNouns = current.isNoun();
+		   }
+		   // If we have at least one target word (noun or verb) and this matches the target type
+		   else if (!curTarg.isEmpty() && ((current.isAdj() && targetIsNouns) || (current.isAdv() && !targetIsNouns))) {
+		      curMod.add(0, current);
+		      locs.add(i);
+		      modifiers = true;
+		   }
 		}
 	}
    
@@ -153,12 +177,14 @@ public class Translator {
       
       // Translate sentences and output to terminal
       for (TaggedSentence sentence : spanish_dev) {
+          sentence.print(); 
+          translator.randomTranslation(sentence).print();
           sentence.print(true);
-          sentence.print();
           translator.noBeforeVerb(sentence);
           //translator.randomTranslation(sentence).print();
           translator.processFigures(sentence);
-          translator.switchNounAndAdjective(sentence);
+          translator.modelTranslation(sentence).print();
+          translator.rearrangeModifiers(sentence);
           //translator.randomTranslation(sentence).print();
           translator.modelTranslation(sentence).print();
           System.out.println("");

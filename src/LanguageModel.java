@@ -63,8 +63,9 @@ public class LanguageModel {
       
       for (TaggedWord candidate : possibleWords) {
          String[] previousWord = prevWord.word.split("\\s+");
+         String[] candidateWord = candidate.word.split("\\s+");
          
-         double score = scorebigram(previousWord[previousWord.length-1], candidate.word);
+         double score = scorebigram(previousWord[previousWord.length-1], candidateWord[0]);
          //System.out.println("\t" + candidate.word + ": " + score);
          if (score > highScore) {
             highScore = score;

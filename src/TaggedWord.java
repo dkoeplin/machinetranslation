@@ -24,6 +24,11 @@ public class TaggedWord {
          POS = (sfind.find()) ? space : punct;
    }
    
+   public boolean isNoun() { return this.POS.startsWith("N"); }
+   public boolean isAdj() { return this.POS.startsWith("ADJ"); }
+   public boolean isVerb() { return this.POS.startsWith("V"); }
+   public boolean isAdv() { return this.POS.startsWith("ADV"); }
+   
    /* Does the given have the same POS as some other word?
       POS are made to be somewhat general in the dictionary in some cases 
       so they are considered to be matching if the tag from the tagger contains
