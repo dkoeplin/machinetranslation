@@ -162,8 +162,6 @@ gran
 great
 gusta
 like
-ha
-have
 habría
 would have
 había
@@ -283,7 +281,7 @@ stay, remain
 quien
 who
 quito
-remove
+remove, Quito
 razones
 reason, argue
 reportados
@@ -597,6 +595,7 @@ Afghanistan
 respecto
 respect
 primer
+first
 parámetro
 parameter
 ha
@@ -606,6 +605,7 @@ remember
 Zapatero
 Zapatero
 perdieron
+lose, miss, waste
 empleos
 employment
 euros

@@ -75,12 +75,12 @@ public class Translator {
 		   String w = taggedWord.word;
 		   m = numberPattern.matcher(w);
 		   while (m.find()) {
-			   System.out.println("old figures: " + w);
+			   //System.out.println("old figures: " + w);
 			   w = w.replace(".", ",");
 			   //w.replace(",", "."); //
 			   TaggedWord newWord = new TaggedWord(w, taggedWord.POS);
 			   sentence.set(i, newWord);
-			   System.out.println("new figures: " + w);
+			   //System.out.println("new figures: " + w);
 		   }
 		  
 	   }
@@ -99,11 +99,30 @@ public class Translator {
 				   sentence.set(i, current);
 				   sentence.set(i+ 2, next);
 				 
-				   System.out.println("VSfin: " + nextWord.word);
-				   t.print(false);
+				   //System.out.println("VSfin: " + nextWord.word);
 			   }
 		   }
 	   }
+	}
+	
+	public void switchNounAndAdjective(TaggedSentence t) {
+		List<TaggedWord> sentence = t.getSentence();
+		for (int i = 0; i < sentence.size(); i++) {
+			TaggedWord current = sentence.get(i);
+			if (i > 0 && current.POS.equals("ADJ")) {
+				System.out.println("adj: " + current.word);
+				TaggedWord previous = sentence.get(i - 2);
+				System.out.println("noun: " + previous.word);
+				if (previous.POS.equals("NC")) {
+					System.out.println("noun: " + previous.word);
+					TaggedWord newCurrent = new TaggedWord(previous.word, previous.POS);
+					TaggedWord newPrevious = new TaggedWord(current.word, current.POS);
+					
+					sentence.set(i, newCurrent);
+					sentence.set(i-2, newPrevious);
+				}
+			}
+		}
 	}
    
    public static void main(String[] args) {  
@@ -118,10 +137,13 @@ public class Translator {
       
       // Translate sentences and output to terminal
       List<TaggedSentence> translatedSentences = translator.directTranslation(spanish_dev);
+      System.out.println("size: " + translatedSentences.size());
       for (TaggedSentence sentence : translatedSentences) {
           translator.noBeforeVerb(sentence);
           translator.processFigures(sentence);
+          translator.switchNounAndAdjective(sentence);
       }
+      System.out.println("size: " + translatedSentences.size());
       for (TaggedSentence sentence : translatedSentences)
          sentence.print(true);
    }
