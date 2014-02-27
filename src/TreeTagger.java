@@ -43,13 +43,17 @@ public class TreeTagger {
             int end   = start + word.length();
             
             output.addWord(sentence.substring(0, start), "");
-            if (word.contains(" ")) {
+           
+            // The tagger occasionally groups multiple Spanish words together
+            // when this happens just split them up and give them the same tag
+            if (word.trim().contains(" ")) {
                String [] words = word.split(" ");
                for (int i = 0; i < words.length; i++)
-                  output.addWord(words[i], tag);
+                  output.addWord(words[i].trim(), tag);
             }
-            else 
-               output.addWord(word, tag);
+            else
+               output.addWord(word.trim(), tag);
+            
             sentence = sentence.substring(end);
          }
          stdIn.close();

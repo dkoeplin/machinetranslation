@@ -39,18 +39,12 @@ public class Translator {
       return translations;
    }
    
-   public static void main(String[] args) {  
-      TaggedDictionary dictionary = new TaggedDictionary("dictionary.txt", true);
-      Translator translator = new Translator(dictionary);
-      TreeTagger spanishPOS = new TreeTagger(System.getProperty("user.dir") + "/TreeTagger",
-            "cmd/tree-tagger-spanish-utf8");
-      
-      // Load sentences from file
+   public static List<TaggedSentence> loadAndTagSentences(String filename, TreeTagger tagger) {
       List<TaggedSentence> sentences = new ArrayList<TaggedSentence>();
       try {
-         BufferedReader input = new BufferedReader( new InputStreamReader(new FileInputStream("sentences_dev.txt"), "UTF8"));
+         BufferedReader input = new BufferedReader( new InputStreamReader(new FileInputStream(filename), "UTF8"));
          for(String line = input.readLine(); line != null; line = input.readLine())
-            sentences.add(spanishPOS.tagSentence(line.trim()));
+            sentences.add(tagger.tagSentence(line.trim()));
          
          input.close();
       }
@@ -59,12 +53,21 @@ public class Translator {
          e.printStackTrace();
          System.exit(1);
       }
+      return sentences;
+   }
+   
+   public static void main(String[] args) {  
+      TaggedDictionary dictionary = new TaggedDictionary("dictionary.txt", true);
+      Translator translator = new Translator(dictionary);
+      TreeTagger spanishPOS = new TreeTagger(System.getProperty("user.dir") + "/TreeTagger",
+                                                "cmd/tree-tagger-spanish-utf8");
       
-      for (TaggedSentence sentence : sentences) 
-         sentence.print(false);
+      // Load sentences from file
+      List<TaggedSentence> spanish_dev = loadAndTagSentences("sentences_dev.txt", spanishPOS);
+      List<TaggedSentence> spanish_test = loadAndTagSentences("sentences_test.txt", spanishPOS);
       
       // Translate sentences and output to terminal
-      List<TaggedSentence> translatedSentences = translator.directTranslation(sentences);
+      List<TaggedSentence> translatedSentences = translator.directTranslation(spanish_dev);
       for (TaggedSentence sentence : translatedSentences)
          sentence.print(true);
    }
