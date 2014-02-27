@@ -70,6 +70,8 @@ public class TaggedDictionary {
                E.add(new TaggedWord(restoreCapitalization(f.word, e.word), f.POS));
          }
       }
+      else 
+         E.add(f);
       return E;
    }
    

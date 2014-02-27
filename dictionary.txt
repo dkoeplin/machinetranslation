@@ -71,7 +71,7 @@ communicate
 con
 with
 consejo
-advice
+advice, council
 contra
 against
 cosa
@@ -110,8 +110,8 @@ dólares
 dollar
 el
 the
-electoral
 electorcal
+electoral
 emergencia
 emergency
 empleados
@@ -157,7 +157,7 @@ fire
 fundador
 founder
 ganado
-cattle, win
+cattle, win, won
 gran
 great
 gusta
@@ -281,7 +281,7 @@ stay, remain
 quien
 who
 quito
-remove, Quito
+remove/V, Quito/NP
 razones
 reason, argue
 reportados

@@ -10,34 +10,46 @@ import java.util.regex.Pattern;
 
 public class Translator {
    TaggedDictionary dictionary;
+   LanguageModel targetModel;
    Pattern wordPattern = Pattern.compile("[\\p{L}\\w].*[\\p{L}\\w]|[\\w\\p{L}]");
    Pattern numberPattern = Pattern.compile("\\d+(\\.\\d{3})*(,\\d*)?");
    
-   public Translator(TaggedDictionary dict) {
+   public Translator(TaggedDictionary dict, LanguageModel model) {
       dictionary = dict;
+      targetModel = model;
+   }
+   
+   public TaggedSentence modelTranslation(TaggedSentence sentence) {
+      TaggedSentence translation = new TaggedSentence();
+      
+      sentence.initIter();
+      TaggedWord prevWord = new TaggedWord("","");
+      while (sentence.hasNext()) {
+         TaggedWord f = sentence.next();
+         List<TaggedWord> possibleTranslations = dictionary.getWordTranslations(f);
+         if (possibleTranslations.isEmpty()) {
+            System.out.println("No translations found for " + f.word);
+            System.exit(-1);
+         }
+         TaggedWord trans = targetModel.chooseBestGreedy(prevWord, possibleTranslations);
+         translation.addWord(trans);
+         if (trans.isAWord())
+            prevWord = trans;
+      }
+      
+      return translation;
    }
    
    // Performs a direct, word for word translation of a sentence based
    // on the translator's dictionary
-   public List<TaggedSentence> directTranslation(List<TaggedSentence> sentences) {
-      List<TaggedSentence> translations = new ArrayList<TaggedSentence>();
-      if (sentences == null || sentences.isEmpty())
-         return translations;
-               
-      // Iterate through sentences
-      for (TaggedSentence sentence : sentences) {
-         TaggedSentence translation = new TaggedSentence();
-        
-         sentence.initIter();
-         while (sentence.hasNext()) {
-            TaggedWord f = sentence.next();
-            
-            // List<TaggedWord> E = dictionary.getWordTranslations(f);
-            translation.addWord(dictionary.getRandomTranslation(f));
-         }
-         translations.add(translation);
-      }
-      return translations;
+   public TaggedSentence randomTranslation(TaggedSentence sentence) {
+      TaggedSentence translation = new TaggedSentence();
+              
+      sentence.initIter();
+      while (sentence.hasNext())
+         translation.addWord(dictionary.getRandomTranslation(sentence.next()));
+      
+      return translation;
    }
    
    public static List<TaggedSentence> loadAndTagSentences(String filename, TreeTagger tagger) {
@@ -110,9 +122,9 @@ public class Translator {
 		for (int i = 0; i < sentence.size(); i++) {
 			TaggedWord current = sentence.get(i);
 			if (i > 0 && current.POS.equals("ADJ")) {
-				System.out.println("adj: " + current.word);
+				//System.out.println("adj: " + current.word);
 				TaggedWord previous = sentence.get(i - 2);
-				System.out.println("noun: " + previous.word);
+				//System.out.println("noun: " + previous.word);
 				if (previous.POS.equals("NC")) {
 					System.out.println("noun: " + previous.word);
 					TaggedWord newCurrent = new TaggedWord(previous.word, previous.POS);
@@ -126,8 +138,9 @@ public class Translator {
 	}
    
    public static void main(String[] args) {  
-      TaggedDictionary dictionary = new TaggedDictionary("dictionary.txt", true);
-      Translator translator = new Translator(dictionary);
+      TaggedDictionary dictionary = new TaggedDictionary("dictionary.txt");
+      LanguageModel model = new LanguageModel("bigrams.txt");
+      Translator translator = new Translator(dictionary, model);
       TreeTagger spanishPOS = new TreeTagger(System.getProperty("user.dir") + "/TreeTagger",
                                                 "cmd/tree-tagger-spanish-utf8");
       
@@ -136,15 +149,15 @@ public class Translator {
       List<TaggedSentence> spanish_test = loadAndTagSentences("sentences_test.txt", spanishPOS);
       
       // Translate sentences and output to terminal
-      List<TaggedSentence> translatedSentences = translator.directTranslation(spanish_dev);
-      System.out.println("size: " + translatedSentences.size());
-      for (TaggedSentence sentence : translatedSentences) {
+      for (TaggedSentence sentence : spanish_dev) {
+          sentence.print();
           translator.noBeforeVerb(sentence);
+          translator.randomTranslation(sentence).print();
           translator.processFigures(sentence);
           translator.switchNounAndAdjective(sentence);
+          translator.randomTranslation(sentence).print();
+          translator.modelTranslation(sentence).print();
+          System.out.println("");
       }
-      System.out.println("size: " + translatedSentences.size());
-      for (TaggedSentence sentence : translatedSentences)
-         sentence.print(true);
    }
 }
