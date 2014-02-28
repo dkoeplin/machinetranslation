@@ -122,6 +122,18 @@ public class Translator {
       RearrangedModifiers rearrangedModifiers = new RearrangedModifiers();
       CheckAmounts checkAmounts = new CheckAmounts();
       
+      // Baseline translations (parts of speech not actually used)
+      System.out.println("Baseline Translations");
+      System.out.println("Development Set");
+      for (TaggedSentence sentence : spanish_dev)
+         translator.randomTranslation(sentence).print();
+      System.out.println("");
+      System.out.println("Training Set");
+      for (TaggedSentence sentence : spanish_test) 
+         translator.randomTranslation(sentence).print();
+      System.out.println("");
+      System.out.println("");
+      
       for (TaggedSentence sentence : spanish_dev) {
          sentence.print(true);
     	   processNegation.applyStrategy(sentence);
