@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Translator {
@@ -18,7 +17,44 @@ public class Translator {
       targetModel = model;
    }
    
-   public TaggedSentence modelTranslation(TaggedSentence sentence) {
+   public TaggedSentence multiBigramModelTranslation(TaggedSentence sentence) {
+      TaggedSentence translation = new TaggedSentence();
+      
+      sentence.initIter();
+      TaggedWord prevWord = new TaggedWord("", "");
+      List<TaggedWord> curChoices = null;
+      List<TaggedWord> intermediates = new ArrayList<TaggedWord>(); 
+      int index = 0;
+      while (sentence.hasNext()) {
+         TaggedWord f = sentence.next();
+         if (f.isAWord()) {
+            List<TaggedWord> possibleNexts = dictionary.getWordTranslations(f);
+            TaggedWord trans = null;
+            if (index > 0) {
+               trans = targetModel.chooseBestTri(prevWord, curChoices, possibleNexts);
+               translation.addWord(trans);
+               for (TaggedWord sp : intermediates) 
+                  translation.addWord(sp);
+               intermediates.clear();
+            }
+            else
+               trans = new TaggedWord("", "");
+            curChoices = possibleNexts;
+            prevWord = trans; 
+            index++;
+         }
+         else
+            intermediates.add(f);
+      }
+      // Translate last word in sequence
+      translation.addWord(targetModel.chooseBestTri(prevWord, curChoices, null));
+      for (TaggedWord sp : intermediates) 
+         translation.addWord(sp);
+      
+      return translation;
+   }
+   
+   public TaggedSentence bigramModelTranslation(TaggedSentence sentence) {
       TaggedSentence translation = new TaggedSentence();
       
       sentence.initIter();
@@ -27,9 +63,6 @@ public class Translator {
          TaggedWord f = sentence.next();
          if (f.isAWord()) {
             List<TaggedWord> possibleTranslations = dictionary.getWordTranslations(f);
-            if (possibleTranslations.isEmpty()) {
-               System.out.println("No translation available for " + f.word + "/" + f.POS);
-            }
             //System.out.println("Translating " + prevWord.word + " [" + f.word + "]");
             TaggedWord trans = targetModel.chooseBestGreedy(prevWord, possibleTranslations);
             translation.addWord(trans);
@@ -72,7 +105,7 @@ public class Translator {
    }
    	   
    public static void main(String[] args) {  
-      TaggedDictionary dictionary = new TaggedDictionary("dictionary.txt", true);
+      TaggedDictionary dictionary = new TaggedDictionary("dictionary.txt", false);
       LanguageModel model = new LanguageModel("bigrams.txt");
       Translator translator = new Translator(dictionary, model);
       TreeTagger spanishPOS = new TreeTagger(System.getProperty("user.dir") + "/TreeTagger",
@@ -83,23 +116,40 @@ public class Translator {
       List<TaggedSentence> spanish_test = loadAndTagSentences("sentences_test.txt", spanishPOS);
       
       // Translate sentences and output to terminal
-      
       ReplaceWithAn replaceWithAn = new ReplaceWithAn();
       ProcessFigures processFigures = new ProcessFigures();
       ProcessNegation processNegation = new ProcessNegation();
       RearrangedModifiers rearrangedModifiers = new RearrangedModifiers();
       CheckAmounts checkAmounts = new CheckAmounts();
       
+      // Baseline translations (parts of speech not actually used)
+      System.out.println("Baseline Translations");
+      System.out.println("Development Set");
+      for (TaggedSentence sentence : spanish_dev)
+         translator.randomTranslation(sentence).print();
+      System.out.println("");
+      System.out.println("Training Set");
+      for (TaggedSentence sentence : spanish_test) 
+         translator.randomTranslation(sentence).print();
+      System.out.println("");
+      System.out.println("");
+      
       for (TaggedSentence sentence : spanish_dev) {
-    	  sentence.print();
-    	  processNegation.applyStrategy(sentence);
-    	  processFigures.applyStrategy(sentence);
-    	  checkAmounts.applyStrategy(sentence);
-          rearrangedModifiers.applyStrategy(sentence);
-          TaggedSentence translated = translator.modelTranslation(sentence);
-          replaceWithAn.applyStrategy(translated);
-          translated.print();
-          System.out.println("");
+         sentence.print(true);
+    	   processNegation.applyStrategy(sentence);
+    	   processFigures.applyStrategy(sentence);
+         rearrangedModifiers.applyStrategy(sentence);
+        
+         TaggedSentence trans = translator.bigramModelTranslation(sentence);
+         replaceWithAn.applyStrategy(trans);
+         checkAmounts.applyStrategy(trans);
+         trans.print();
+         
+         TaggedSentence english = translator.multiBigramModelTranslation(sentence);
+         replaceWithAn.applyStrategy(english);
+         checkAmounts.applyStrategy(english);
+         english.print();
+         System.out.println("");
       }
    }
 }

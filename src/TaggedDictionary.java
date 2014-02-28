@@ -1,6 +1,5 @@
 import java.io.BufferedReader;
 import java.io.FileInputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -28,7 +27,6 @@ public class TaggedDictionary {
          BufferedReader input = new BufferedReader( new InputStreamReader(new FileInputStream(filename), "UTF-8"));
          String f = input.readLine();
          while (f != null) {
-            //f = f.replaceAll("[^\\w]", "");  // replace non-word characters like apostrophes
             String allTranslations = input.readLine();
             String[] curTrans = allTranslations.split(",");
             List<TaggedWord> E = new ArrayList<TaggedWord>();
@@ -36,7 +34,10 @@ public class TaggedDictionary {
                String[] tags = e.split("/");
                String trans = tags[0].trim();
                String pos = (tags.length > 1) ? tags[1].trim() : "";
-               E.add(new TaggedWord(trans, pos));
+               String tense = (tags.length > 2) ? tags[2].trim() : "";
+               E.add(new TaggedWord(trans, pos, tense));
+               for (int i = 3; i < tags.length; i++)  // add other conjugations/forms of this word
+                  E.add(new TaggedWord(trans, pos, tags[i].trim()));
             }
             translations.put(f.toLowerCase(), E);
             if (verbose) { System.out.print(f + "=> "); for (TaggedWord trans : E) { System.out.print(trans.word + "/" + trans.POS + ", "); } System.out.print("\n");} 
@@ -67,8 +68,12 @@ public class TaggedDictionary {
          if (f.isAWord() && translations.containsKey(f.word.toLowerCase())) {
             List<TaggedWord> list = translations.get(f.word.toLowerCase());
             for (TaggedWord e : list) {
-               if (f.samePOS(e))
-                  E.add(new TaggedWord(restoreCapitalization(f.word, e.word), e.POS));
+               if (f.matches(e))
+                  E.add(new TaggedWord(restoreCapitalization(f.word, e.word), f.POS, f.tense));
+            }
+            if (E.isEmpty()) {
+               System.out.println("No translation available for " + f.word + "/" + f.POS + "/" + f.tense + " - reverting to random word");
+               E.add(getRandomTranslation(f));
             }
          }
          else 
