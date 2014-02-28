@@ -140,30 +140,31 @@ public class Translator {
       
       for (TaggedSentence sentence : spanish_dev) {
          sentence.print(true);
-    	   processNegation.applyStrategy(sentence);
-    	   checkArticles.applyStrategy(sentence);
+    	 processNegation.applyStrategy(sentence);
+    	 checkArticles.applyStrategy(sentence);
          rearrangedModifiers.applyStrategy(sentence);
         
          TaggedSentence trans = translator.multiBigramModelTranslation(sentence);
          replaceWithAn.applyStrategy(trans);
-         checkAmounts.applyStrategy(trans);
          processFigures.applyStrategy(trans);
+         checkAmounts.applyStrategy(trans);
          missingSubjects.applyStrategy(trans);
          trans.print();
-   
          System.out.println("");
       }
       
       for (TaggedSentence sentence : spanish_test) {
          sentence.print();
          processNegation.applyStrategy(sentence);
+         checkArticles.applyStrategy(sentence);
          rearrangedModifiers.applyStrategy(sentence);
          
-         translator.multiBigramModelTranslation(sentence).print();
-         //replaceWithAn.applyStrategy(english);
-         //processFigures.applyStrategy(english);
-         //checkAmounts.applyStrategy(english);
-         //english.print();
+         TaggedSentence trans = translator.multiBigramModelTranslation(sentence);
+         replaceWithAn.applyStrategy(trans);
+         processFigures.applyStrategy(trans);
+         checkAmounts.applyStrategy(trans);
+         missingSubjects.applyStrategy(trans);
+         trans.print();
          System.out.println("");
       }
    }

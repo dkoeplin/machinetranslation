@@ -193,9 +193,9 @@ after/P, behind/P, bottom/N/S, bottoms/N/P
 tratarse
 tries/V/SHE, try/V/THEY/YOU/WE/ME, tried/V/PAST, treats/V/SHE, treat/V/THEY/YOU/WE/ME, treated/V/PAST, to try/V/inf, to treat/V/inf, trying/V/ger, treating/V/ger
 un
-a
+a, an
 una
-a
+a, an
 único
 unique, only
 Unión
