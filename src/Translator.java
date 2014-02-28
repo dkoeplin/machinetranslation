@@ -91,6 +91,7 @@ public class Translator {
       CheckAmounts checkAmounts = new CheckAmounts();
       
       for (TaggedSentence sentence : spanish_dev) {
+    	  sentence.print();
     	  processNegation.applyStrategy(sentence);
     	  processFigures.applyStrategy(sentence);
     	  checkAmounts.applyStrategy(sentence);
