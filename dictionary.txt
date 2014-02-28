@@ -31,7 +31,7 @@ although
 ayuda
 help/N/S, assistance/N/S, aid/N/S
 caída
-fall/N/S, falls/N/P, falls/V/SHE, fall/V/THEY/YOU/WE/ME, fell/V/PAST, drops/V/SHE, drop/V/THEY/YOU/WE/ME, dropped/V/PAST, to drop/V/inf, dropping/V/ger, failure/N/S, failures/N/P
+fall/N/S, falls/N/P, falls/V/SHE, fall/V/THEY/YOU/WE/ME, fell/V/PAST, drops/V/SHE, drop/V/THEY/YOU/WE/ME, dropped/V/PAST, to drop/V/inf, dropping/V/ger
 compañía
 company/N/S, companies/N/P
 compraba

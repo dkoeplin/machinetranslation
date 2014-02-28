@@ -140,22 +140,17 @@ public class Translator {
       
       for (TaggedSentence sentence : spanish_dev) {
          sentence.print(true);
-    	 processNegation.applyStrategy(sentence);
-    	 processFigures.applyStrategy(sentence);
-    	 checkArticles.applyStrategy(sentence);
+    	   processNegation.applyStrategy(sentence);
+    	   checkArticles.applyStrategy(sentence);
          rearrangedModifiers.applyStrategy(sentence);
         
-         TaggedSentence trans = translator.bigramModelTranslation(sentence);
+         TaggedSentence trans = translator.multiBigramModelTranslation(sentence);
          replaceWithAn.applyStrategy(trans);
          checkAmounts.applyStrategy(trans);
-         //trans.print();
+         processFigures.applyStrategy(trans);
+         missingSubjects.applyStrategy(trans);
+         trans.print();
          
-         translator.multiBigramModelTranslation(sentence, false, false).print();
-         translator.multiBigramModelTranslation(sentence).print();
-         //replaceWithAn.applyStrategy(english);
-         //processFigures.applyStrategy(english);
-         //checkAmounts.applyStrategy(english);
-         //english.print();
          System.out.println("");
       }
       
