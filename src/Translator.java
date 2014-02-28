@@ -16,8 +16,10 @@ public class Translator {
       dictionary = dict;
       targetModel = model;
    }
-   
    public TaggedSentence multiBigramModelTranslation(TaggedSentence sentence) {
+      return multiBigramModelTranslation(sentence, true, true);
+   }
+   public TaggedSentence multiBigramModelTranslation(TaggedSentence sentence, boolean usePOS, boolean useTense) {
       TaggedSentence translation = new TaggedSentence();
       
       sentence.initIter();
@@ -28,7 +30,7 @@ public class Translator {
       while (sentence.hasNext()) {
          TaggedWord f = sentence.next();
          if (f.isAWord()) {
-            List<TaggedWord> possibleNexts = dictionary.getWordTranslations(f);
+            List<TaggedWord> possibleNexts = dictionary.getWordTranslations(f, usePOS, useTense);
             TaggedWord trans = null;
             if (index > 0) {
                trans = targetModel.chooseBestTri(prevWord, curChoices, possibleNexts);

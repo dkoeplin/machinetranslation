@@ -1,7 +1,7 @@
 a
 to, on, by, at, per
 absorban
-absorbs/V/SHE, absorb/V/THEY/YOU/WE/ME, absorbed/V/PAST
+absorbs/V/SHE, absorb/V/THEY/YOU/WE/ME, absorbed/V/PAST, absorbing/V/ger, to absorb/V/inf
 adquisición
 acquisition/N/S, acquisitions/N/P, purchase/N/S, purchases/N/P
 adicta
@@ -23,7 +23,7 @@ ad/N/S, ads/N/P, announcement/N/S, announcements/N/P
 apenas
 as soon as, hardly, scarcely, only
 aplicada
-applied/ADJ, apply/V/SHE, apply/V/THEY/YOU/WE/ME, applied/V/PAST
+applied/ADJ, apply/V/SHE, apply/V/THEY/YOU/WE/ME, applied/V/PAST, to apply/V/inf, applying/V/ger
 asimismo
 likewise, also
 aunque
@@ -31,11 +31,11 @@ although
 ayuda
 help/N/S, assistance/N/S, aid/N/S
 caída
-fall/N/S, falls/N/P, falls/V/SHE, fall/V/THEY/YOU/WE/ME, fell/V/PAST, drops/V/SHE, drop/V/THEY/YOU/WE/ME, dropped/V/PAST
+fall/N/S, falls/N/P, falls/V/SHE, fall/V/THEY/YOU/WE/ME, fell/V/PAST, drops/V/SHE, drop/V/THEY/YOU/WE/ME, dropped/V/PAST, to drop/V/inf, dropping/V/ger, failure/N/S, failures/N/P
 compañía
 company/N/S, companies/N/P
 compraba
-buys/V/SHE, buy/V/THEY/YOU/WE/ME, bought/V/PAST, purchases/V/SHE, purchase/V/THEY/YOU/WE/ME, purchased/V/PAST, takes over/V/SHE, take over/V/THEY/YOU/WE/ME, took over/V/PAST
+buys/V/SHE, buy/V/THEY/YOU/WE/ME, bought/V/PAST, purchases/V/SHE, purchase/V/THEY/YOU/WE/ME, purchased/V/PAST, takes over/V/SHE, take over/V/THEY/YOU/WE/ME, took over/V/PAST, to buy/V/inf, buying/V/ger, to purchase/V/inf, purchasing/V/ger, to take over/V/inf, taking over/V/ger
 como
 as/ADV, like/ADV, about/ADV, as/C, if/C, that/C, and/C
 con
@@ -45,7 +45,7 @@ of, from, as, with, about
 del
 of the, than
 dicho
-aforementioned/ADJ, saying/N/S, sayings/N/P, expression/N/S, expressions/N/P, declaration/N/S, declarations/N/P, says/V/SHE, say/V/THEY/YOU/WE/ME, said/V/PAST, declares/V/SHE, declare/V/THEY/YOU/WE/ME, declared/V/PAST
+aforementioned/ADJ, saying/N/S, sayings/N/P, expression/N/S, expressions/N/P, declaration/N/S, declarations/N/P, says/V/SHE, say/V/THEY/YOU/WE/ME, said/V/PAST, declares/V/SHE, declare/V/THEY/YOU/WE/ME, declared/V/PAST, to declare/V/inf, declaring/V/ger, to say/V/inf, saying/V/ger
 dos
 two/N/S/P, second/ADJ
 dólares
@@ -55,7 +55,7 @@ during
 el
 the
 empleados
-employee/N/S, employees/N/P, employs/V/SHE, employ/V/THEY/YOU/WE/ME, employed/V/PAST, uses/V/SHE, use/V/THEY/YOU/WE/ME, used/V/PAST, spends/V/SHE, spend/V/THEY/YOU/WE/ME, spent/V/PAST
+employee/N/S, employees/N/P, employs/V/SHE, employ/V/THEY/YOU/WE/ME, employed/V/PAST, uses/V/SHE, use/V/THEY/YOU/WE/ME, used/V/PAST, spends/V/SHE, spend/V/THEY/YOU/WE/ME, spent/V/PAST, to spend/V/inf, spending/V/ger
 empleos
 employment/N/S, job/N/S, jobs/N/P
 empresa
@@ -65,7 +65,7 @@ in, into, by
 encaje
 lace/N/S, laces/N/P, fit/N/S, fits/N/P, fitting/N/S, fittings/N/P
 es
-is/V/SHE, are/V/THEY/YOU/WE/ME, was/V/PAST
+is/V/SHE, are/V/THEY/YOU/WE/ME, was/V/PAST, to be/V/inf, being/V/ger
 especialmente
 especially
 esta
@@ -81,7 +81,7 @@ European/N/S, European/N/P
 euros
 euro/N/S, eurors/N/P
 experimenta
-experiments/V/SHE, experiment/V/THEY/YOU/WE/ME, experimented/V/PAST, tries out/V/SHE, try out/V/THEY/YOU/WE/ME, tried out/V/PAST, experiences/V/SHE, experience/THEY/YOU/WE/ME, experienced/V/PAST
+experiments/V/SHE, experiment/V/THEY/YOU/WE/ME, experimented/V/PAST, tries out/V/SHE, try out/V/THEY/YOU/WE/ME, tried out/V/PAST, experiences/V/SHE, experience/THEY/YOU/WE/ME, experienced/V/PAST, to try out/V/inf, trying out/V/ger, to experiment/V/inf, experimenting/V/ger, to experience/V/inf, experiencing/V/ger
 exterior
 exterior/N/S, exteriors/N/P
 financieros
@@ -93,7 +93,7 @@ founder/N/S, founders/N/P, founding/ADJ
 gran
 great
 gusta
-likes/V/SHE, like/V/THEY/YOU/WE/ME, liked/V/PAST, loves/V/SHE, love/V/THEY/YOU/WE/ME, loved/V/PAST
+likes/V/SHE, like/V/THEY/YOU/WE/ME, liked/V/PAST, loves/V/SHE, love/V/THEY/YOU/WE/ME, loved/V/PAST, to like/V/inf, liking/V/ger, to love/V/inf, loving/V/ger
 ha
 has/V/SHE, have/V/THEY/YOU/WE/ME, had/V/PAST, ha/ITJN
 humanitaria
@@ -103,7 +103,7 @@ report/N/S, reports/N/P, formless/ADJ
 ingresos
 revenue/N/S, revenues/N/P, income/N/S, incomes/N/P, admission/N/S, incomes/N/P
 inicia
-starts/V/SHE, start/V/THEY/YOU/WE/ME, started/V/PAST, begins/V/SHE, begin/V/THEY/YOU/WE/ME, began/V/PAST
+starts/V/SHE, start/V/THEY/YOU/WE/ME, started/V/PAST, begins/V/SHE, begin/V/THEY/YOU/WE/ME, began/V/PAST, to start/V/inf, starting/V/ger, to begin/V/inf, beginning/V/ger
 instantánea
 snapshot/N/S, snapshots/N/P, instant/ADJ
 interior
@@ -117,7 +117,7 @@ it/P, the/ART, it/N/S, them/N/P
 los
 the
 mantiene
-maintains/V/SHE, maintain/V/THEY/YOU/WE/ME, maintained/V/PAST, keeps/V/SHE, keep/V/THEY/YOU/WE/ME, kept/V/PAST
+maintains/V/SHE, maintain/V/THEY/YOU/WE/ME, maintained/V/PAST, keeps/V/SHE, keep/V/THEY/YOU/WE/ME, kept/V/PAST, to maintain/V/inf, maintaining/V/ger, to keep/V/inf, keeping/V/ger
 masiva
 massive
 me
@@ -127,7 +127,7 @@ mentions/V/SHE, mention/V/THEY/YOU/WE/ME, mentioned/V/PAST
 mensajería
 messaging/N/S, messagings/N/P, courier service/N/S, courier services/N/P
 mercados
-buys/V/SHE, buy/V/THEY/YOU/WE/ME, bought/V/PAST, market/N/S, markets/N/P
+buys/V/SHE, buy/V/THEY/YOU/WE/ME, bought/V/PAST, market/N/S, markets/N/P, to buy/V/inf, buying/V/ger
 millones
 million/N/S, millions/N/P
 modelo
@@ -141,11 +141,11 @@ Olympic/ADJ, Olympics/N/S/P
 parámetro
 parameter/N/S, parameters/N/P
 pegada
-glues/V/SHE, glue/V/THEY/YOU/WE/ME, glued/V/PAST, punch/N/S, punches/N/P, appeal/N/S, appeals/N/P
+glues/V/SHE, glue/V/THEY/YOU/WE/ME, glued/V/PAST, punch/N/S, punches/N/P, appeal/N/S, appeals/N/P, to glue/V/inf, gluing/V/ger, to punch/V/inf, punching/V/ger, to appeal/V/inf, appealing/V/ger
 perdieron
-loses/V/SHE, lose/V/THEY/YOU/WE/ME, lost/V/PAST, misses/V/SHE, miss/V/THEY/YOU/WE/ME, missed/V/PAST, wastes/V/SHE, waste/V/THEY/YOU/WE/ME, wasted/V/PAST
+loses/V/SHE, lose/V/THEY/YOU/WE/ME, lost/V/PAST, misses/V/SHE, miss/V/THEY/YOU/WE/ME, missed/V/PAST, wastes/V/SHE, waste/V/THEY/YOU/WE/ME, wasted/V/PAST, to lose/V/inf, to waste/V/inf, wasting/V/ger, losing/V/ger
 pensiones
-pension/N/S, pensions/N/P, bothers/V/SHE, bother/V/THEY/YOU/WE/ME, bothered/V/PAST, taxes/V/SHE, tax/V/THEY/YOU/WE/ME, taxed/V/PAST
+pension/N/S, pensions/N/P, bothers/V/SHE, bother/V/THEY/YOU/WE/ME, bothered/V/PAST, taxes/V/SHE, tax/V/THEY/YOU/WE/ME, taxed/V/PAST, to bother/V/inf, bothering/V/ger, to tax/V/inf, taxing/V/ger
 por
 by, through, for, per, because of
 porque
@@ -163,11 +163,11 @@ public
 que
 that, which
 recordado
-remembers/V/SHE, remember/V/THEY/YOU/WE/ME, remembered/V/PAST, recalls/V/SHE, recall/V/THEY/YOU/WE/ME, recalled/V/PAST
+remembers/V/SHE, remember/V/THEY/YOU/WE/ME, remembered/V/PAST, recalls/V/SHE, recall/V/THEY/YOU/WE/ME, recalled/V/PAST, to remember/V/inf, remembering/V/ger, to recall/V/inf, recalling/V/ger
 respecto
 with respect/N/S/P, regarding/N/S/P
 resulta
-results/V/SHE, result/V/THEY/YOU/WE/ME, resulted/V/PAST, result/N/S, results/N/P, effect/N/S, effects/N/P
+results/V/SHE, result/V/THEY/YOU/WE/ME, resulted/V/PAST, result/N/S, results/N/P, effect/N/S, effects/N/P, to result/V/inf, resulting/V/ger
 se
 himself, herself, itself
 servicio
@@ -181,17 +181,17 @@ yes
 tanto
 so much/P, so much/ADJ, as much/P, point/N/S, points/N/P, goal/N/S, goals/N/P, so/ADV, much/ADV, both/ADV
 soy
-is/V/SHE, are/V/THEY/YOU/WE, am/V/ME, was/V/PAST
+is/V/SHE, are/V/THEY/YOU/WE, am/V/ME, was/V/PAST, to be/V/inf, being/V/ger
 televisor
 television/N/S, televisions/N/P
 tiende
-stretches/V/SHE, stretch/V/THEY/YOU/WE/ME, stretched/V/PAST, tends/V/SHE, tend//V/THEY/YOU/WE/ME, tended/V/PAST, spreads/V/SHE, spread/V/THEY/YOU/WE/ME/PAST, extends/V/SHE, extend/V/THEY/YOU/WE/ME, extended/V/PAST, lays out/V/SHE, lay out/V/THEY/YOU/WE/ME, laid out/V/PAST, aims/V/SHE, aim/V/THEY/YOU/WE/ME, aimed/V/PAST
+stretches/V/SHE, stretch/V/THEY/YOU/WE/ME, stretched/V/PAST, tends/V/SHE, tend//V/THEY/YOU/WE/ME, tended/V/PAST, spreads/V/SHE, spread/V/THEY/YOU/WE/ME/PAST, extends/V/SHE, extend/V/THEY/YOU/WE/ME, extended/V/PAST, lays out/V/SHE, lay out/V/THEY/YOU/WE/ME, laid out/V/PAST, aims/V/SHE, aim/V/THEY/YOU/WE/ME, aimed/V/PAST, to lay out/V/inf, laying out/V/ger, to aim/V/inf, aiming/V/ger, to extend/V/inf, extending/V/ger, to spread/V/inf, spreading/V/ger, to tend/V/inf, tending/V/ger, to stretch/V/inf, stretching/V/ger
 tiene
 has/V/SHE, have/V/THEY/YOU/WE/ME, had/N/P
 tras
 after/P, behind/P, bottom/N/S, bottoms/N/P
 tratarse
-tries/V/SHE, try/V/THEY/YOU/WE/ME, tried/V/PAST, treats/V/SHE, treat/V/THEY/YOU/WE/ME, treated/V/PAST
+tries/V/SHE, try/V/THEY/YOU/WE/ME, tried/V/PAST, treats/V/SHE, treat/V/THEY/YOU/WE/ME, treated/V/PAST, to try/V/inf, to treat/V/inf, trying/V/ger, treating/V/ger
 un
 a
 una
@@ -211,13 +211,13 @@ week/N/S, weeks/N/P
 mandatario
 leader/N/S, leaders/N/P, representative/N/S, representatives/N/P
 apoyó
-supports/V/SHE, support/V/THEY/YOU/WE/ME, supported/V/PAST
+supports/V/SHE, support/V/THEY/YOU/WE/ME, supported/V/PAST, to support/V/inf, supporting/V/ger
 candidato
 candidate/N/S, candidates/N/P, candidate/ADJ
 oficialista
 government/ADJ, government/N/S, governments/N/P
 quito
-remove/V/ME/WE/THEY/YOU, removes/V/SHE, removed/V/PAST, Quito/N/S, Quito/N/P
+remove/V/ME/WE/THEY/YOU, removes/V/SHE, removed/V/PAST, Quito/N/S, Quito/N/P, to remove/V/inf, removing/V/ger
 actual
 current/ADJ, present/ADJ, topical/ADJ
 alcalde
@@ -235,7 +235,7 @@ national/N/S/P, national/ADJ
 electorcal
 electoral
 reportados
-report/V/SHE, reports/V/THEY/YOU/WE/ME, reported/V/PAST
+report/V/SHE, reports/V/THEY/YOU/WE/ME, reported/V/PAST, to report/V/inf, reporting/V/ger
 medios
 mean/N/S, means/N/P, half/ADJ, medium/ADJ, average/ADJ
 locales
@@ -243,9 +243,9 @@ local
 opositor
 opponent/N/S, opponnets/N/P
 habría
-has/V/SHE, have/V/THEY/YOU/WE/ME, had/V/PAST
+has/V/SHE, have/V/THEY/YOU/WE/ME, had/V/PAST, to have/V/inf, having/V/ger
 ganado
-cow/N/S, cattle/N/P, wins/V/SHE, win/V/THEY/YOU/WE/ME, won/V/PAST
+cow/N/S, cattle/N/P, wins/V/SHE, win/V/THEY/YOU/WE/ME, won/V/PAST, to win/V/inf, winning/V/ger
 más
 more
 votos
@@ -269,7 +269,7 @@ only
 posible
 possible
 bañarse
-bathes/V/SHE, bathe/V/THEY/YOU/WE/ME, bathed/V/PAST
+bathes/V/SHE, bathe/V/THEY/YOU/WE/ME, bathed/V/PAST, to bathe/V/inf, bathing/V/ger
 mar
 sea/N/S, seas/N/P
 muerto
@@ -283,15 +283,15 @@ beaches/N/P, beach/N/S
 privadas
 private/ADJ, bathroom/N/S, bathrooms/N/P
 tendederos
-clothes line/N/S, clothes lines/N/P
+clothesline/N/S, clotheslines/N/P
 viviendas
-housing/N/S, housings/N/P, home/N/S, homes/N/P
+housing/N/S, housings/N/P, home/N/S, homes/N/P, house/N/S, houses/N/P
 han
-has/V/SHE, have/V/THEY/YOU/WE/ME, had/V/PAST
+has/V/SHE, have/V/THEY/YOU/WE/ME, had/V/PAST, to have/V/inf, having/V/ger
 ido
-gone/ADJ, goes/V/SHE, go/V/THEY/YOU/WE/ME, went/V/PAST
+gone/ADJ, goes/V/SHE, go/V/THEY/YOU/WE/ME, went/V/PAST, to go/V/inf, going/V/ger
 frenando
-slows down/V/SHE, slow down/V/THEY/YOU/WE/ME, slowed down/V/YOU/WE/ME, stops/V/SHE, stop/V/THEY/YOU/WE/ME, stopped/V/PAST, brakes/V/SHE, brake/V/THEY/YOU/WE/ME, broke/V/PAST
+slows down/V/SHE, slow down/V/THEY/YOU/WE/ME, slowed down/V/YOU/WE/ME, stops/V/SHE, stop/V/THEY/YOU/WE/ME, stopped/V/PAST, brakes/V/SHE, brake/V/THEY/YOU/WE/ME, broke/V/PAST, breaking/V/ger, slowing down/V/ger, stopping/V/ger, to break/V/inf, to stop/V/inf, to slow down/V/inf
 hasta
 until/P, up to/P, down to/P, even/ADV
 impacto
@@ -301,13 +301,13 @@ against/P, con/N/S, cons/N/P, against/ADV
 suelo
 ground/N/S, grounds/N/P, floor/N/S, floors/N/P
 alertado
-alerts/V/SHE, alert/V/THEY/YOU/WE/ME, alerted/V/PAST, alarms/V/SHE, alarm/V/THEY/YOU/WE/ME, alarmed/V/PAST
+alerts/V/SHE, alert/V/THEY/YOU/WE/ME, alerted/V/PAST, alarms/V/SHE, alarm/V/THEY/YOU/WE/ME, alarmed/V/PAST, to alarm/V/inf, alarming/V/ger, to alert/V/inf, alerting/V/ger
 vecino
 neighbor/N/S, neighbors/N/P, neighboring/ADJ
 quien
 who
 avisó
-warns/V/SHE, warn/V/THEY/YOU/WE/ME, warned/V/PAST, advises/V/SHE, advise/V/THEY/YOU/WE/ME, advised/V/PAST
+warns/V/SHE, warn/V/THEY/YOU/WE/ME, warned/V/PAST, advises/V/SHE, advise/V/THEY/YOU/WE/ME, advised/V/PAST, to warn/V/inf, warning/V/ger, to advise/V/inf, advising/V/ger
 emergencia
 emergency/N/S, emergencies/N/P
 son
@@ -317,13 +317,13 @@ the
 su
 his, her
 es
-is/V/SHE, are/V/WE/THEY/YOU, am/V/ME, was/PAST
+is/V/SHE, are/V/WE/THEY/YOU, am/V/ME, was/PAST, to be/V/inf, being/V/ger
 gas
 gas/N/S, gases/N/P, fume/N/S, fumes/N/P
 xenón
 xenon
 utiliza
-uses/V/SHE, use/V/THEY/YOU/WE/ME, used/V/PAST
+uses/V/SHE, use/V/THEY/YOU/WE/ME, used/V/PAST, to use/V/inf, using/V/ger
 habitualmente
 usually
 clínicas
@@ -345,15 +345,15 @@ perceptible
 controles
 control/N/S, controls/N/P, check/N/S, checks/N/P
 dopaje
-doping
+doping/N/S/P
 dosis
 doses/N/P, dose/N/S
 muy
 very
 concentradas
-concentrates/V/SHE, concentrate/V/THEY/YOU/WE/ME, concentrated/V/PAST
+concentrates/V/SHE, concentrate/V/THEY/YOU/WE/ME, concentrated/V/PAST, to concentrate/V/inf, concentrating/V/ger
 estimula
-encourages/V/SHE, encourage/V/THEY/YOU/WE/ME, encouraged/V/PAST, stimulates/V/SHE, stimulate/V/THEY/YOU/WE/ME, stimulated/V/PAST
+encourages/V/SHE, encourage/V/THEY/YOU/WE/ME, encouraged/V/PAST, stimulates/V/SHE, stimulate/V/THEY/YOU/WE/ME, stimulated/V/PAST, to encourage/V/inf, encouraging/V/ger, to stimualate/V/inf, stimulating/V/ger
 secreción
 secretion/N/S, secretions/N/P
 hormona
@@ -363,7 +363,7 @@ Erythropoietin
 linea
 line/N/S, lines/N/P
 incorpora
-incorporates/V/SHE, incorporate/V/THEY/YOU/WE/ME, incorporated/V/PAST, adds/V/SHE, add/V/THEY/YOU/WE/ME, added/V/PAST
+incorporates/V/SHE, incorporate/V/THEY/YOU/WE/ME, incorporated/V/PAST, adds/V/SHE, add/V/THEY/YOU/WE/ME, added/V/PAST, to incorporate/V/inf, incorporating/V/ger, to add/V/inf, adding/V/ger
 lector
 reader/N/S, readers/N/P
 huella
@@ -383,7 +383,7 @@ Italian
 nunca
 never
 sido
-is/V/SHE, are/V/THEY/YOU/WE/ME, was/V/PAST
+is/V/SHE, are/V/THEY/YOU/WE/ME, been/V/PAST
 diputado
 representative/N/S, representatives/N/P, delegate/N/S, delegates/N/P
 algo
@@ -393,13 +393,13 @@ a lot, much
 nos
 us
 echan
-throws/V/SHE, throw/V/THEY/YOU/WE/ME, threw/V/PAST, fires/V/SHE, fire/V/THEY/YOU/WE/ME, fired/V/PAST
+throws/V/SHE, throw/V/THEY/YOU/WE/ME, threw/V/PAST, fires/V/SHE, fire/V/THEY/YOU/WE/ME, fired/V/PAST, to throw/V/inf, throwing/V/ger, to fire/V/inf, firing/V/ger
 cara
 face/N/S, faces/N/P
 consideran
-considers/V/SHE, consider/V/THEY/YOU/WE/ME, considered/V/PAST, thinks/V/SHE, think/V/THEY/YOU/WE/ME, thought/V/PAST
+considers/V/SHE, consider/V/THEY/YOU/WE/ME, considered/V/PAST, thinks/V/SHE, think/V/THEY/YOU/WE/ME, thought/V/PAST, to think/V/inf, thinking/V/ger, to consider/V/inf, considering/V/ger
 falta
-mistake/N/S, mistakes/N/P, error/N/S, errors/N/P, miss/N/S, fail/N/S, fails/N/P, shortage/N/S, shortages/N/P, deficient/ADJ, misses/V/SHE, miss/V/THEY/YOU/WE/ME, missed/V/PAST, fails/V/SHE, fail/V/THEY/YOU/WE/ME, failed/V/PAST
+mistake/N/S, mistakes/N/P, error/N/S, errors/N/P, miss/N/S, fail/N/S, fails/N/P, shortage/N/S, shortages/N/P, deficient/ADJ, misses/V/SHE, miss/V/THEY/YOU/WE/ME, missed/V/PAST, fails/V/SHE, fail/V/THEY/YOU/WE/ME, failed/V/PAST, to miss/V/inf, missing/V/ger, to fail/V/inf, failing/V/ger
 experiencia
 experience/N/S, experiences/N/P
 política
@@ -417,13 +417,13 @@ indigenous, native
 importante
 important, considerable
 denunciado
-reports/V/SHE, report/V/THEY/YOU/WE/ME, reported/V/PAST, accuses/V/SHE, accuse/V/THEY/YOU/WE/ME, accused/V/PAST
+reports/V/SHE, report/V/THEY/YOU/WE/ME, reported/V/PAST, accuses/V/SHE, accuse/V/THEY/YOU/WE/ME, accused/V/PAST, to report/V/inf, reporting/V/ger, to accuse/V/inf, accusing/V/ger
 desde
 from, since
 hace
-does/V/SHE, do/V/THEY/YOU/SHE/ME, did/V/PAST, makes/V/SHE, make/V/THEY/YOU/WE/ME, made/V/PAST
+does/V/SHE, do/V/THEY/YOU/SHE/ME, did/V/PAST, makes/V/SHE, make/V/THEY/YOU/WE/ME, made/V/PAST, to do/V/inf, doing/V/ger, to make/V/inf, making/V/ger
 unos
-ones/N/P, one/N/S
+ones/N/P, one/N/S, about/ADV, some/ADV, few/ADJ, some/ADJ, some/N/S/P
 meses
 months/N/P, mes/N/S
 avistamiento
@@ -433,7 +433,7 @@ strange, foreign
 aviones
 plane/N/S, planes/N/P, airplane/N/S, airplanes/N/P
 tripulados
-mans/V/SHE, man/V/THEY/YOU/WE/ME, manned/V/PAST, ships/V/SHE, ship/V/THEY/YOU/WE/ME, shipped/V/PAST, crews/V/SHE, crew/V/THEY/YOU/WE/ME, crewed/V/PAST
+mans/V/SHE, man/V/THEY/YOU/WE/ME, manned/V/PAST, ships/V/SHE, ship/V/THEY/YOU/WE/ME, shipped/V/PAST, crews/V/SHE, crew/V/THEY/YOU/WE/ME, crewed/V/PAST, to crew/V/inf, crewing/V/ger
 regiones
 regions/N/P, region/N/S
 sur
@@ -453,21 +453,21 @@ after
 revolución
 revolution/N/S, revolutions/N/P
 eliminara
-removes/V/SHE, remove/V/THEY/YOU/WE/ME, removed/V/PAST, eliminates/V/SHE, eliminate/V/THEY/YOU/WE/ME, eliminated/V/PAST
+removes/V/SHE, remove/V/THEY/YOU/WE/ME, removed/V/PAST, eliminates/V/SHE, eliminate/V/THEY/YOU/WE/ME, eliminated/V/PAST, to remove/V/inf, removing/V/ger, to eliminate/V/inf, eliminating/V/ger
 prácticamente
 practically
 impuestos
-imposes/V/SHE, impose/V/THEY/YOU/WE/ME, imposed/V/PAST, taxes/V/SHE, tax/V/THEY/YOU/WE/ME, taxed/V/PAST, tax/N/S, taxes/N/P
+imposes/V/SHE, impose/V/THEY/YOU/WE/ME, imposed/V/PAST, taxes/V/SHE, tax/V/THEY/YOU/WE/ME, taxed/V/PAST, tax/N/S, taxes/N/P, to impose/V/inf, imposing/V/ger, to tax/V/inf, taxing/V/ger
 nueva
 new/ADJ, news/N/S/P
 ley
 law/N/S, laws/N/P
 tributaria
-tax/N/S, taxes/N/P, taxable/ADJ
+tax/N/S, taxes/N/P, taxable/ADJ, tax/ADJ
 busca
-searches/V/SHE, search/V/THEY/YOU/WE/ME, searched/V/PAST
+searches/V/SHE, search/V/THEY/YOU/WE/ME, searched/V/PAST, to search/V/inf, searching/V/ger
 revertir
-reverts/V/SHE, revert/V/THEY/YOU/WE/ME, reverted/V/PAST
+reverts/V/SHE, revert/V/THEY/YOU/WE/ME, reverted/V/PAST, to revert/V/inf, reverting/V/ger
 esa
 that
 situación
@@ -475,12 +475,12 @@ situation/N/S, situations/N/P, location/N/S, locations/N/P, position/N/S, positi
 para
 for, to
 respaldar
-endorses/V/SHE, endorse/V/THEY/YOU/WE/ME, endorsed/V/PAST, supports/V/SHE, support/V/THEY/YOU/WE/ME, supported/V/PAST, leaning-stock/N/S, learning-stocks/N/P
+endorses/V/SHE, endorse/V/THEY/YOU/WE/ME, endorsed/V/PAST, supports/V/SHE, support/V/THEY/YOU/WE/ME, supported/V/PAST, leaning-stock/N/S, learning-stocks/N/P, to endorse/V/inf, endorsing/V/ger, to support/V/inf, supporting/V/ger
 gastos
 expenses/N/P, expense/N/S
 sociales
 social/ADJ, reunion/N/S, reunions/N/P
-le
-to him, to her
 y
 and
+le
+to him, to her
