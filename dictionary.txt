@@ -1,628 +1,126 @@
 a
 to, on, by, at, per
-actual
-current, present, topical
-adicta
-addicted/ADJ, attached/ADJ, committed/ADJ, addict/N
-adivinar
-guess, foretell, divine
-admirados
-admire, be amazed
-adquisición
-acquisition, purchase
-aguardaba
-wait for, await, expect
-ahora
-now/ADV, now/C, but/C
 al
 to the
-alcalde
-mayor
-alertado
-alert, alarm, be alert
-algún
-some, any
-amigos
-friends/N, friendly/ADJ
-amistad
-friendship
-anuncio
-ad, announcement
-apenas
-as soon as, hardly, scarcely, only
-apoyó
-support/N, backing/N, gave support/V, gave backing/V
-apriesa
-quickly, in a hurry
-arma
-weapon
-arrestadas
-intrepid/ADJ, bold/ADJ, audacious/ADJ, arrested/V
-asesinadas
-murder
-atado
-tied/ADJ, bundle/N, parcel/N, tied/V
-aunque
-although
-avisó
-notice/N, warning/N, notified/V, advised/V, warned/V
-bien
-well/ADV, good/N, good/ADJ
-candidato
-candidate
-caso
-case, event
-causa
-cause, reason, case
-caída
-fall, drop
+absorban
+absorbs/V/SHE, absorb/V/THEY/YOU/WE/ME, absorbed/V/PAST
+adquisición
+acquisition/N/S, acquisitions/N/P, purchase/N/S, purchases/N/P
+Afganistán
+Afghanistan
+ahora
+now/ADV, now/C, but/C
+ahorro
+saving/N/S, savings/N/P
+ámbito
+field/N/S, fields/N/P, scope/N/S, scopes/N/P
+aplicada
+applied/ADJ, apply/V/SHE, apply/V/THEY/YOU/WE/ME, applied/V/PAST
+asimismo
+likewise, also
+ayuda
+help/N/S, assistance/N/S, aid/N/S
 como
 as/ADV, like/ADV, about/ADV, as/C, if/C, that/C, and/C
-compañía
-company
-compraba
-bought, purchased, took over
-comunique
-communicate, convey, transmit
 con
 with, despite, by
-consejo
-advice, council, meeting
-contra
-against/P, con/N, against/ADV
-cosa
-thing
-creo
-believe, think, create, make
-cuando
-when/ADV, if/C, during/P, even if/C, even though/C
-dar
-give, yield, deal, strike
-datos
-data
 de
 of, from, as, with, about
-declaraba
-declare, state, say
-dejaba
-leave
-del
-of the, than
-desasosiego
-uneasiness, restlessness, unrest
-desposado
-groom/N, bridge/N, handcuffed/ADJ, married/V
 dicho
-aforementioned/ADJ, saying/N, expression/N, declaration/N, said/V, declared/V
-docenas
-dozen/N, twelfth/ADJ
-don
-gift, present
-dos
-two, second/ADJ
-durante
-during
-dólares
-dollars/N, smooth/V
+aforementioned/ADJ, saying/N/S, sayings/N/P, expression/N/S, expressions/N/P, declaration/N, declaration/N/P, says/V/SHE, say/V/THEY/YOU/WE/ME, said/V/PAST, declares/V/SHE, declare/V/THEY/YOU/WE/ME, declared/V/PAST
 el
 the
-electorcal
-electoral
-emergencia
-emergency
-empleados
-employees/N, employ/V, use/V, spend/V
-empresa
-business, company
+empleos
+employment/N/S, job/N/S, jobs/N/P
 en
 in, into, by
-enamorado
-in love/ADJ, lover/N
 encaje
-lace, fit
-encarceladas
-jail, imprison
-entre
-between/P, amongst/P, meanwhile/ADV
-es
-is
-escolares
-school, pupil
-especialmente
-especially
-esta
-be
-estaba
-be
-estarse
-be
-estas
-be
-experimenta
-experiment, try out, experience
-extraña
-strange, foreign
-frenando
-slow down, stop, brake
-fuego
-fire
+lace/N/S, laces/N/P, fit/N/S, fits/N/P, fitting/N/S, fittings/N/P
+esencialmente
+essentially
+estrategia
+strategy/N/S, strategies/N/P
+esto
+this
+Europea
+European
+euros
+euro/N/S, eurors/N/P
+exterior
+exterior
+financieros
+financial/ADJ, financier/N/S, financiers/N/P
+fondos
+bottom/N/S, bottoms/N/P, fund/N/S, funds/N/P
 fundador
-founder/N, founding/ADJ
-ganado
-cattle/N, win/V, won/VLadj
+founder/N/S, founders/N/P, founding/ADJ
 gran
 great
-gusta
-like, love
-habría
-would have
-había
-have
-hacer
-do, make
-han
-have
-hasta
-until/P, up to/P, down to/P, even/ADV
-hay
-there is, there are
-heridos
-hurt, wounded
-ido
-gone/ADJ, went/V
-impacto
-impact
-improviso
-unexpected, unforeseen
+ha
+has/V, ha/ITJN
+humanitaria
+humanitarian/ADJ, philanthropic/ADJ
+informe
+report/N/S, reports/N/P, formless/ADJ
+ingresos
+revenue/N/S, revenues/N/P, income/N/S, incomes/N/P, admission/N/S, incomes/N/P
 inicia
-starts, begins
+starts/V/SHE, start/V/THEY/YOU/WE/ME, started/V/PAST, begins/V/SHE, begin/V/THEY/YOU/WE/ME, began/V/PAST
 instantánea
-snapshot, instant
+snapshot/N/S, snapshots/N/P, instant/ADJ
+interior
+interior
 la
 the
-las
-the
-le
-him, her
-les
-them
-llamaban
-call, phone
-llamativa
-striking
-lo
-it/P, the/ART, it/N
-locales
-local
 los
 the
-lugar
-place, town
-mandatario
-leader, representative
-mantiene
-maintain, keep
-me
-me, I
-medios
-means/N, half/ADJ, medium/ADJ, average/ADJ
+masiva
+massive
+menciona
+mentions/V/SHE, mention/V/THEY/YOU/WE/ME, mentioned/V/PAST
 mensajería
-messaging, courier service
+messaging/N/S, messagings/N/P, courier service/N/S, courier services/N/P
+mercados
+buys/V/SHE, buy/V/THEY/YOU/WE/ME, bought/V/PAST, market/N/S, markets/N/P
 millones
-million
+million/N/S, millions/N/P
 modelo
-model
-mover
-move
-movido
-moved
-mudanza
-alteration, change
-más
-more
-nacional
-national
+model/N/S, models/N/P
+nada
+nothing
 no
 no/N, not/NEG, not/ADV, no/ADV
-oficialista
-government
-olímpicos
-Olympic/ADJ, Olympics/N
-opositor
-opponent
-oír
-hear, listen
-pastores
-shepherd
-pegada
-glued/V, punch/N, appeal/N
-pensamientos
-thoughts, ideas
-personas
-people
-piernas
-legs
-poco
-little, few, not many, not much
-podían
-be able to/V, power/N, authority/N
-por
-by, through, for, per, because of
-porque
-because/C, why/N, for what reason/N, for the reason that/N
-preliminares
-preliminary
-primera
+parámetro
+parameter/N/S, parameters/N/P
+perdieron
+loses/V/SHE, lose/V/THEY/YOU/WE/ME, lost/V/PAST, misses/V/SHE, miss/V/THEY/YOU/WE/ME, missed/V/PAST, wastes/V/SHE, waste/V/THEY/YOU/WE/ME, wasted/V/PAST
+pensiones
+pension/N/S, pensions/N, bothers/V/SHE, bother/V/THEY/YOU/WE/ME, bothered/V/PAST, taxes/V/SHE, tax/V/THEY/YOU/WE/ME, taxed/V/PAST
+primer
 first
-privanza
-favor
-problema
-problem
-pudo
-could, can
-pues
-well, then, since, as
+proporciona
+provides/V/SHE, provide/V/THEY/YOU/WE/ME, provided/V/PAST
+públicos
+public
 que
 that, which
-quedaron
-stay, remain
-quedo
-quiet/ADJ, soft/ADJ, quietly/ADV, softly/ADV
-quien
-who
-quito
-remove/V, Quito/NP
-razones
-reason, argue
-reportados
-report
-resulta
-result, effect
-saltos
-jump, leap, dive
+recordado
+remembers/V/SHE, remember/V/THEY/YOU/WE/ME, remembered/V/PAST, recalls/V/SHE, recall/V/THEY/YOU/WE/ME, recalled/V/PAST
+respecto
+with respect/N, regarding/N
 se
 himself, herself, itself
-secreta
-secret
-según
-according to/P, as/C, depending on/P
-semana
-week
-semanas
-weeks
-sentí
-feel, be sorry about, symphatise
-ser
-be
-serlo
-be
-servicio
-service
-servicios
-services
-similar
-similar
-soy
-am
-su
-his, her
-suelo
-ground, floor
-sus
-their, his, her, its
-sí
-yes
-tan
-so
 tanto
 so much/P, so much/ADJ, as much/P, point/N, goal/N, so/ADV, much/ADV, both/ADV
-televisor
-television
-tendederos
-clothesline
-tenía
-have, get, be
+tiende
+stretches/V/SHE, stretch/V/THEY/YOU/WE/ME, stretched/V/PAST, tends/V/SHE, tend//V/THEY/YOU/WE/ME, tended/V/PAST, spreads/V/SHE, spread/V/THEY/YOU/WE/ME/PAST, extends/V/SHE, extend/V/THEY/YOU/WE/ME, extended/V/PAST, lays out/V/SHE, lay out/V/THEY/YOU/WE/ME, laid out/V/PAST, aims/V/SHE, aim/V/THEY/YOU/WE/ME, aimed/V/PAST
 tiene
-has
-todas
-all/P, entire/P, whole/P, entirely/ADV, totally/ADV, completely/ADV
-todos
-everybody
-tornó
-around/P, about/P, drill/N, potter's wheel/N, lathe/N
-tras
-after/P, behind/P, bottom/N
-tratarse
-tried, treated
-traía
-bring
-tres
-three/N, three/ADJ, third/ADJ
+has/V/SHE, have/V/THEY/YOU/WE/ME, had/N/P
 un
 a
 una
 a
-uno
-one
-vecino
-neighbor/N, neighboring/ADJ
-vestidos
-dress, wear
-vez
-time
-viaje
-trip, journey
-vieron
-see, watch, look at
-viviendas
-housing, home
-votos
-vote
-y
-and
-yo
-I, me, myself
-ámbito
-field, scope
-él
-he
-único
-unique, only
-xenón
-xenon
-utiliza
-use
-habitualmente
-usually
-clínicas
-clinics
-narcótico
-narcotic
-pero
-but/C, except/C, yet/C, snag/N, fault/N
-además
-besides, in addition, moreover
-gas
-gas, fumes
-inodoro
-toilet/N, odorless/ADJ
-e
-and
-incoloro
-colorless
-detectable
-perceptible
-controles
-control, check
-dopaje
-doping
-dosis
-doses
-muy
-very
-concentradas
-concentrated
-estimula
-encourages, stimulates
-secreción
-secretion
-hormona
-hormone
-eritropoietina
-Erythropoietin
-linea
-line
-incorpora
-incorporates, adds
-lector
-reader
-huella
-footprint, mark
-digital
-digital
-medida
-measurements, dimensions
-seguridad
-security
-nuevo
-new
-primer
-first
-ministro
-minister, secretary
-italiano
-Italian
-nunca
-never
-diputado
-representative, delegate
-algo
-something, a little
-muchos
-a lot, much
-nos
-us
-echan
-throw, fire
-cara
-face
-consideran
-consider, think
-falta
-mistake/N, error/N, miss/N, fail/N, shortage/N, deficient/ADJ
-experiencia
-experience
-política
-politics, policy
-varios
-pink/N, minnow/N, varied/ADJ, several/QU
-miembros
-members
-comunidades
-communities
-grupo
-group
-indígena
-indigenous, native
-importante
-important, considerable
-denunciado
-report, accuse
-desde
-from, since
-hace
-do, make
-unos
-ones
-meses
-months
-avistamiento
-sighting
-extraños
-strange, foreign
-aviones
-plane, airplane
-tripulados
-man
-regiones
-regions
-sur
-south/N, south/ADJ, southern/ADJ
-país
-country
-sin
-without
-cultura
-culture, knowledge
-fiscal
-fiscal
-después
-after
-revolución
-revolution
-eliminara
-removed, eliminated
-prácticamente
-practically
-impuestos
-impose/V, tax/V, tax/N
-nueva
-new/ADJ, news/N
-ley
-law
-tributaria
-tax/N, taxable/ADJ
-busca
-search
-revertir
-revert
-esa
-that
-situación
-situation, location, position
-para
-for, to
-respaldar
-endorse/V, support/V, learning-stock/N
-gastos
-expenses
-sociales
-social/ADJ, reunion/N
-estrategia
-strategy
-aplicada
-applied/ADJ, applied/V
-fondos
-bottom, funds
-pensiones
-pensions/N, bother/V, tax/V
-tiende
-stretches, tends, spreads, extends, lays out, aims
-esencialmente
-essentially
-mercados
-buy/V, markets/N
-financieros
-financial/ADJ, financier/N
-absorban
-absorb
-ahorro
-savings
-informe
-report/N, formless/ADJ
-menciona
-mentioned
-nada
-nothing
-esto
-this
 Unión
 Union
-Europea
-European
-proporciona
-provide
-asimismo
-likewise, also
-ayuda
-help, assistance, aid
-humanitaria
-humanitarian, philanthropic
-masiva
-massive
-interior
-interior
-exterior
-exterior
-Afganistán
-Afghanistan
-respecto
-with respect/N, regarding/N
-primer
-first
-parámetro
-parameter
-ha
-has/V, ha/ITJN
-recordado
-remembered, recalled
-perdieron
-lost, missed, wasted
-empleos
-employment
-euros
-euros
-ingresos
-revenue, income, admission
-públicos
-public
-teoría
-theory
-zonas
-zones, areas
-costa
-coast, cost
-todavía
-still, even
-son
-are/V, sound/N
-públicas
-public/ADJ, publish/V
-práctica
-practice
-sólo
-only
-posible
-possible
-bañarse
-bathe
-mar
-sea
-muerto
-death
-través
-misfortune/N, through/P, crossbeam/N, across/P
-playas
-beaches
-privadas
-private/ADJ, bathroom/N
+viaje
+trip/N/S, trips/N/P, journey/N/S, journeys/N/P
