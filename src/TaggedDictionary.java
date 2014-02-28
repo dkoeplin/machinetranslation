@@ -72,7 +72,7 @@ public class TaggedDictionary {
                   E.add(new TaggedWord(restoreCapitalization(f.word, e.word), f.POS, f.tense));
             }
             if (E.isEmpty()) {
-               System.out.println("No translation available for " + f.word + "/" + f.POS + "/" + f.tense + " - reverting to random word");
+               //System.out.println("No translation available for " + f.word + "/" + f.POS + "/" + f.tense + " - reverting to random word");
                E.add(getRandomTranslation(f));
             }
          }

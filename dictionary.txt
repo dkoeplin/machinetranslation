@@ -482,3 +482,5 @@ sociales
 social/ADJ, reunion/N/S, reunions/N/P
 le
 to him, to her
+y
+and

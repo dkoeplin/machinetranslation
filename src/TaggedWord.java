@@ -128,4 +128,12 @@ public class TaggedWord {
    public boolean isPunct() {
       return this.POS.equals(punct);
    }
+   
+   public boolean isPlural() {
+	   if (this.isVerb() || this.isNoun()) {
+		   if (this.tense.equals("YOU") || this.tense.equals("ME") || this.tense.equals("WE") ||
+			   this.tense.equals("THEY") || this.tense.equals("P")) return true;
+	   }
+	   return false;
+   }
 }

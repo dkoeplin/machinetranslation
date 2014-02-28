@@ -121,6 +121,8 @@ public class Translator {
       ProcessNegation processNegation = new ProcessNegation();
       RearrangedModifiers rearrangedModifiers = new RearrangedModifiers();
       CheckAmounts checkAmounts = new CheckAmounts();
+      MissingSubjects missingSubjects = new MissingSubjects();
+      CheckArticles checkArticles = new CheckArticles();
       
       // Baseline translations (parts of speech not actually used)
       System.out.println("Baseline Translations");
@@ -136,20 +138,22 @@ public class Translator {
       
       for (TaggedSentence sentence : spanish_dev) {
          sentence.print(true);
-    	   processNegation.applyStrategy(sentence);
-    	   processFigures.applyStrategy(sentence);
+    	 processNegation.applyStrategy(sentence);
+    	 processFigures.applyStrategy(sentence);
+    	 checkArticles.applyStrategy(sentence);
          rearrangedModifiers.applyStrategy(sentence);
         
          TaggedSentence trans = translator.bigramModelTranslation(sentence);
          replaceWithAn.applyStrategy(trans);
          checkAmounts.applyStrategy(trans);
-         trans.print();
+         //trans.print();
          
          TaggedSentence english = translator.multiBigramModelTranslation(sentence);
          replaceWithAn.applyStrategy(english);
          checkAmounts.applyStrategy(english);
-         english.print();
-         System.out.println("");
+         missingSubjects.applyStrategy(english);
+         english.print(false);
+         //System.out.println("");
       }
    }
 }
