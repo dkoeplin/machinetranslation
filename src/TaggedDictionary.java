@@ -60,32 +60,29 @@ public class TaggedDictionary {
       return output;
    }
    public List<TaggedWord> getWordTranslations(TaggedWord f) {
-      return getWordTranslations(f, true);
+      return getWordTranslations(f, true, true);
    }
-   public List<TaggedWord> getWordTranslations(TaggedWord f, boolean matchPOS) {
-      if (matchPOS) {
-         List<TaggedWord> E = new ArrayList<TaggedWord>();
-         if (f.isAWord() && translations.containsKey(f.word.toLowerCase())) {
-            List<TaggedWord> list = translations.get(f.word.toLowerCase());
-            for (TaggedWord e : list) {
-               if (f.matches(e))
-                  E.add(new TaggedWord(restoreCapitalization(f.word, e.word), f.POS, f.tense));
-            }
-            if (E.isEmpty()) {
-               System.out.println("No translation available for " + f.word + "/" + f.POS + "/" + f.tense + " - reverting to random word");
-               E.add(getRandomTranslation(f));
-            }
+   public List<TaggedWord> getWordTranslations(TaggedWord f, boolean matchPOS, boolean matchTense) {
+      List<TaggedWord> E = new ArrayList<TaggedWord>();
+      if (f.isAWord() && translations.containsKey(f.word.toLowerCase())) {
+         List<TaggedWord> list = translations.get(f.word.toLowerCase());
+         for (TaggedWord e : list) {
+            if (f.matches(e, matchTense) || !matchPOS)
+               E.add(new TaggedWord(restoreCapitalization(f.word, e.word), f.POS, f.tense));
          }
-         else 
-            E.add(f);
-         return E;
+         if (E.isEmpty()) {
+            System.out.println("Warning: No translations available for " + f.word + "/" + f.POS + "/" + f.tense + " - falling back to bigram only");
+            for (TaggedWord e : list)
+               E.add(new TaggedWord(restoreCapitalization(f.word, e.word), f.POS, f.tense));
+         }
       }
       else 
-         return translations.get(f.word.toLowerCase());
+         E.add(f);
+      return E;
    }
    
    public TaggedWord getRandomTranslation(TaggedWord f) {
-      List<TaggedWord> E = getWordTranslations(f, false);
+      List<TaggedWord> E = getWordTranslations(f, false, false);
       if (E == null || E.isEmpty())
          return f;
       else if (E.size() == 1)

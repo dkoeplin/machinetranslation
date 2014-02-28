@@ -31,7 +31,7 @@ although
 ayuda
 help/N/S, assistance/N/S, aid/N/S
 caída
-fall/N/S, falls/N/P, falls/V/SHE, fall/V/THEY/YOU/WE/ME, fell/V/PAST, drops/V/SHE, drop/V/THEY/YOU/WE/ME, dropped/V/PAST, to drop/V/inf, dropping/V/ger
+fall/N/S, falls/N/P, falls/V/SHE, fall/V/THEY/YOU/WE/ME, fell/V/PAST, drops/V/SHE, drop/V/THEY/YOU/WE/ME, dropped/V/PAST, to drop/V/inf, dropping/V/ger, failure/N/S, failures/N/P
 compañía
 company/N/S, companies/N/P
 compraba
@@ -283,9 +283,9 @@ beaches/N/P, beach/N/S
 privadas
 private/ADJ, bathroom/N/S, bathrooms/N/P
 tendederos
-clothes line/N/S, clothes lines/N/P
+clothesline/N/S, clotheslines/N/P
 viviendas
-housing/N/S, housings/N/P, home/N/S, homes/N/P
+housing/N/S, housings/N/P, home/N/S, homes/N/P, house/N/S, houses/N/P
 han
 has/V/SHE, have/V/THEY/YOU/WE/ME, had/V/PAST, to have/V/inf, having/V/ger
 ido
@@ -345,7 +345,7 @@ perceptible
 controles
 control/N/S, controls/N/P, check/N/S, checks/N/P
 dopaje
-doping
+doping/N/S/P
 dosis
 doses/N/P, dose/N/S
 muy
@@ -383,7 +383,7 @@ Italian
 nunca
 never
 sido
-is/V/SHE, are/V/THEY/YOU/WE/ME, was/V/PAST
+is/V/SHE, are/V/THEY/YOU/WE/ME, been/V/PAST
 diputado
 representative/N/S, representatives/N/P, delegate/N/S, delegates/N/P
 algo
@@ -423,7 +423,7 @@ from, since
 hace
 does/V/SHE, do/V/THEY/YOU/SHE/ME, did/V/PAST, makes/V/SHE, make/V/THEY/YOU/WE/ME, made/V/PAST, to do/V/inf, doing/V/ger, to make/V/inf, making/V/ger
 unos
-ones/N/P, one/N/S
+ones/N/P, one/N/S, about/ADV, some/ADV, few/ADJ, some/ADJ, some/N/S/P
 meses
 months/N/P, mes/N/S
 avistamiento
@@ -463,7 +463,7 @@ new/ADJ, news/N/S/P
 ley
 law/N/S, laws/N/P
 tributaria
-tax/N/S, taxes/N/P, taxable/ADJ
+tax/N/S, taxes/N/P, taxable/ADJ, tax/ADJ
 busca
 searches/V/SHE, search/V/THEY/YOU/WE/ME, searched/V/PAST, to search/V/inf, searching/V/ger
 revertir

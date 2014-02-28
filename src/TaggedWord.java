@@ -109,8 +109,8 @@ public class TaggedWord {
       POS are made to be somewhat general in the dictionary in some cases 
       so they are considered to be matching if the tag from the tagger contains
       the tag from the dictionary */
-   public boolean matches(TaggedWord other) {
-      if (this.isNoun() || this.isVerb()) {
+   public boolean matches(TaggedWord other, boolean matchTense) {
+      if ((this.isNoun() || this.isVerb()) && matchTense) {
          return this.tense.equals(other.tense) && (other.POSisUnk() || this.POS.contains(other.POS));
       }
       else
