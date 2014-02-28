@@ -310,3 +310,167 @@ avisó
 notices/V/SHE, notice/V/THEY/YOU/WERE/ME, noticed/V/PAST, warns/V/SHE, warn/V/THEY/YOU/WERE/ME, warned/V/PAST, advises/V/SHE, advise/V/THEY/YOU/WE/ME, advised/V/PAST
 emergencia
 emergency/N/S, emergencies/N/P
+
+
+gas
+gas/N/S, gases/N/P, fume/N/S, fumes/N/P
+xenón
+xenon
+utiliza
+uses/V/SHE, use/V/THEY/YOU/WE/ME, used/V/PAST
+habitualmente
+usually
+clínicas
+clinics/N/P, clinic/N/S, clinic/ADJ
+narcótico
+narcotic/ADJ, narcotic/N/S, narcostics/N/P
+pero
+but/C, except/C, yet/C, snag/N/S, snags/N/P, fault/N/S, faults/N/P
+además
+besides, in addition, moreover
+inodoro
+toilet/N/S, toilets/N/P, odorless/ADJ
+e
+and
+incoloro
+colorless
+detectable
+perceptible
+controles
+control/N/S, controls/N/P, check/N/S, checks/N/P
+dopaje
+doping
+dosis
+doses/N/P, dose/N/S
+muy
+very
+concentradas
+concentrates/V/SHE, concentrate/V/THEY/YOU/WE/ME, concentrated/V/PAST
+estimula
+encourages/V/SHE, encourage/V/THEY/YOU/WE/ME, encouraged/V/PAST, stimulates/V/SHE, stimulate/V/THEY/YOU/WE/ME, stimulated/V/PAST
+secreción
+secretion/N/S, secretions/N/P
+hormona
+hormone/N/S, hormones/N/P
+eritropoietina
+Erythropoietin
+linea
+line/N/S, lines/N/P
+incorpora
+incorporates/V/SHE, incorporate/V/THEY/YOU/WE/ME, incorporated/V/PAST, adds/V/SHE, add/V/THEY/YOU/WE/ME, added/V/PAST
+lector
+reader/N/S, readers/N/P
+huella
+footprint/N/S, footprint/N/P, mark/N/S, marks/N/P
+digital
+digital
+medida
+measurements/N/P, measurement/N/S, dimensions/N/P, dimension/N/S
+seguridad
+security/N/S, securities/N/P
+nuevo
+new
+ministro
+minister/N/S, ministers/N/P, secretary/N/S, secretaries/N/P
+italiano
+Italian
+nunca
+never
+sido
+is/V/SHE, are/V/THEY/YOU/WE/ME, was/V/PAST
+diputado
+representative/N/S, representatives/N/P, delegate/N/S, delegates/N/P
+algo
+something, a little
+muchos
+a lot, much
+nos
+us
+echan
+throws/V/SHE, throw/V/THEY/YOU/WE/ME, threw/V/PAST, fires/V/SHE, fire/V/THEY/YOU/WE/ME, fired/V/PAST
+cara
+face/N/S, faces/N/P
+consideran
+considers/V/SHE, consider/V/THEY/YOU/WE/ME, considered/V/PAST, thinks/V/SHE, think/V/THEY/YOU/WERE/ME, thought/V/PAST
+falta
+mistake/N/S, mistakes/N/P, error/N/S, errors/N/P, miss/N/S, fail/N/S, fails/N/P, shortage/N, shortages/N/P, deficient/ADJ, misses/V/SHE, miss/V/THEY/YOU/WE/ME, missed/V/PAST, fails/V/SHE, fail/V/THEY/YOU/WE/ME, failed/V/PAST
+experiencia
+experience/N/S, experiences/N/P
+política
+politics/N/S/P, policy/N/S, policies/N/P
+varios
+minnow/N/S, minnows/N/P, varied/ADJ, several/QU
+miembros
+members/N/P, member/N/S
+comunidades
+communities/N/P, community/N/S
+grupo
+group/N/S, groups/N/P
+indígena
+indigenous, native
+importante
+important, considerable
+denunciado
+reports/V/SHE, report/V/THEY/YOU/WE/ME, reported/V/PAST, accuses/V/SHE, accuse/V/THEY/YOU/WE/ME, accused/V/PAST
+desde
+from, since
+hace
+does/V/SHE, do/V/THEY/YOU/SHE/ME, did/V/PAST, makes/V/SHE, make/V/THEY/YOU/WE/ME, made/V/PAST
+unos
+ones/N/P, one/N/S
+meses
+months/N/P, mes/N/S
+avistamiento
+sighting/N/S, sightings/N/P
+extraños
+strange, foreign
+aviones
+plane/N/S, planes/N/P, airplane/N/S, airplanes/N/P
+tripulados
+mans/V/SHE, man/V/THEY/YOU/WE/ME, manned/V/PAST, ships/V/SHE, ship/V/THEY/YOU/WE/ME, shipped/V/PAST, crews/V/SHE, crew/V/THEY/YOU/WE/ME, crewed/V/PAST
+regiones
+regions/N/P, region/N/S
+sur
+south/N/S/P, south/ADJ, southern/ADJ
+algunas
+some, someone, any
+país
+country/N/S, countries/N/P
+sin
+without
+cultura
+culture/N/S, cultures/N/P, knowledge/N/S/P
+fiscal
+fiscal
+después
+after
+revolución
+revolution/N/S, revolutions/N/P
+eliminara
+removes/V/SHE, remove/V/THEY/YOU/WE/ME, removed/V/PAST, eliminates/V/SHE, eliminate/V/THEY/YOU/WE/ME, eliminated/V/PAST
+prácticamente
+practically
+impuestos
+imposes/V/SHE, impose/V/THEY/YOU/WE/ME, imposed/V/PAST, taxes/V/SHE, tax/V/THEY/YOU/WE/ME, taxed/V/PAST, tax/N/S, taxes/N/P
+nueva
+new/ADJ, news/N/S/P
+ley
+law/N/S, laws/N/P
+tributaria
+tax/N/S, taxes/N/P, taxable/ADJ
+busca
+searches/V/SHE, search/V/THEY/YOU/WE/ME, searched/V/PAST
+revertir
+reverts/V/SHE, revert/V/THEY/YOU/WE/ME, reverted/V/PAST
+esa
+that
+situación
+situation/N/S, situations/N/P, location/N/S, locations/N/P, position/N/S, positions/N/P
+para
+for, to
+respaldar
+endorses/V/SHE, endorse/V/THEY/YOU/WE/ME, endorsed/V/PAST, supports/V/SHE, support/V/THEY/YOU/WE/ME, supported/V/PAST, leaning-stock/N/S, learning-stocks/N/P
+gastos
+expenses/N/P, expense/N/S
+sociales
+social/ADJ, reunion/N/S, reunions/N/P
