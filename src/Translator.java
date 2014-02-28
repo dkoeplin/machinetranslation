@@ -145,6 +145,6 @@ public class Translator {
       }
       System.out.println("size: " + translatedSentences.size());
       for (TaggedSentence sentence : translatedSentences)
-         sentence.print(true);
+         sentence.print(false);
    }
 }
