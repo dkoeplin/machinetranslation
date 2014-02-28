@@ -62,6 +62,7 @@ public class TaggedDictionary {
    public List<TaggedWord> getWordTranslations(TaggedWord f) {
       return getWordTranslations(f, true, true);
    }
+
    public List<TaggedWord> getWordTranslations(TaggedWord f, boolean matchPOS, boolean matchTense) {
       List<TaggedWord> E = new ArrayList<TaggedWord>();
       if (f.isAWord() && translations.containsKey(f.word.toLowerCase())) {

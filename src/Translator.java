@@ -123,6 +123,8 @@ public class Translator {
       ProcessNegation processNegation = new ProcessNegation();
       RearrangedModifiers rearrangedModifiers = new RearrangedModifiers();
       CheckAmounts checkAmounts = new CheckAmounts();
+      MissingSubjects missingSubjects = new MissingSubjects();
+      CheckArticles checkArticles = new CheckArticles();
       
       // Baseline translations (parts of speech not actually used)
       System.out.println("Baseline Translations");
@@ -137,9 +139,16 @@ public class Translator {
       System.out.println("");
       
       for (TaggedSentence sentence : spanish_dev) {
-         sentence.print();
-    	   processNegation.applyStrategy(sentence);
+         sentence.print(true);
+    	 processNegation.applyStrategy(sentence);
+    	 processFigures.applyStrategy(sentence);
+    	 checkArticles.applyStrategy(sentence);
          rearrangedModifiers.applyStrategy(sentence);
+        
+         TaggedSentence trans = translator.bigramModelTranslation(sentence);
+         replaceWithAn.applyStrategy(trans);
+         checkAmounts.applyStrategy(trans);
+         //trans.print();
          
          translator.multiBigramModelTranslation(sentence, false, false).print();
          translator.multiBigramModelTranslation(sentence).print();
