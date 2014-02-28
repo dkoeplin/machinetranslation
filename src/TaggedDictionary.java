@@ -72,7 +72,7 @@ public class TaggedDictionary {
                E.add(new TaggedWord(restoreCapitalization(f.word, e.word), f.POS, f.tense));
          }
          if (E.isEmpty()) {
-            System.out.println("Warning: No translations available for " + f.word + "/" + f.POS + "/" + f.tense + " - falling back to bigram only");
+            //System.out.println("Warning: No translations available for " + f.word + "/" + f.POS + "/" + f.tense + " - falling back to bigram only");
             for (TaggedWord e : list)
                E.add(new TaggedWord(restoreCapitalization(f.word, e.word), f.POS, f.tense));
          }

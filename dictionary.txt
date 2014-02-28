@@ -43,7 +43,7 @@ with, despite, by
 de
 of, from, as, with, about
 del
-of the, than
+of the
 dicho
 aforementioned/ADJ, saying/N/S, sayings/N/P, expression/N/S, expressions/N/P, declaration/N/S, declarations/N/P, says/V/SHE, say/V/THEY/YOU/WE/ME, said/V/PAST, declares/V/SHE, declare/V/THEY/YOU/WE/ME, declared/V/PAST, to declare/V/inf, declaring/V/ger, to say/V/inf, saying/V/ger
 dos

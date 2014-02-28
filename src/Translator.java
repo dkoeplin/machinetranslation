@@ -155,7 +155,7 @@ public class Translator {
          checkAmounts.applyStrategy(english);
          missingSubjects.applyStrategy(english);
          english.print(false);
-         //System.out.println("");
+         System.out.println("");
       }
    }
 }

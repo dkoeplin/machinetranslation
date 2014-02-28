@@ -18,7 +18,7 @@ public class MissingSubjects {
 			if (current.word.equals(",")) comma = true;
 			if (comma == true && current.isNoun()) nounAfterComma = true;
 			if (current.isVerb()) {
-				if (noun == false || (nounAfterComma == false && comma == true && verb == false)) {
+				if (noun == false || (nounAfterComma == false && comma == true && verb == false && current.POS.equals("VLfin"))) {
 					sentence.add(i, new TaggedWord(" ", "space"));
 					if (current.isPlural()) sentence.add(i, new TaggedWord("they", "CARD"));
 					else sentence.add(i, new TaggedWord("it", "CARD"));
