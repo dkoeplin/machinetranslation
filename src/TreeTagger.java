@@ -37,30 +37,42 @@ public class TreeTagger {
          String s = null;
          while ((s = stdIn.readLine()) != null) {
             String[] tags = s.split("\t");
-            String word = tags[0];
-            String tag = tags[1];
-            int start = sentence.indexOf(word);
-            int end   = start + word.length();
-            
-            output.addWord(sentence.substring(0, start), "");
-           
-            // The tagger occasionally groups multiple Spanish words together
-            // when this happens just split them up and give them the same tag
-            if (word.trim().contains(" ")) {
-               String [] words = word.split(" ");
-               for (int i = 0; i < words.length; i++)
-                  output.addWord(words[i].trim(), tag);
+            if (tags.length > 1) {
+               String word = tags[0];
+               String tag = tags[1];
+               int start = sentence.indexOf(word);
+               int end   = start + word.length();
+               
+               if (start > 0)
+                  output.addWord(sentence.substring(0, start), "");
+              
+               // The tagger occasionally groups multiple Spanish words together
+               // when this happens just split them up and give them the same tag
+               if (word.trim().contains(" ")) {
+                  String [] words = word.split(" ");
+                  for (int i = 0; i < words.length; i++) {
+                     int wordStart = sentence.indexOf(words[i]);
+                     int wordStop  = start + words[i].length();
+                     
+                     if (wordStart > 0 && i > 0) 
+                        output.addWord(sentence.substring(0, wordStart), "");
+                     
+                     output.addWord(sentence.substring(wordStart, wordStop), tag);
+                     sentence = sentence.substring(wordStop);
+                  }
+               }
+               else {
+                  output.addWord(sentence.substring(start, end), tag);
+                  sentence = sentence.substring(end);
+               }
             }
-            else
-               output.addWord(word.trim(), tag);
-            
-            sentence = sentence.substring(end);
          }
          stdIn.close();
       }
       catch (Exception e) {
          System.out.println(e.getMessage());
          e.printStackTrace();
+         System.exit(-1);
       }
       return output;
    }

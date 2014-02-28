@@ -39,7 +39,7 @@ public class TaggedDictionary {
                E.add(new TaggedWord(trans, pos));
             }
             translations.put(f.toLowerCase(), E);
-            if (verbose) { System.out.print(f + "=> "); for (TaggedWord trans : E) { System.out.print(trans.word + ", "); } System.out.print("\n");} 
+            if (verbose) { System.out.print(f + "=> "); for (TaggedWord trans : E) { System.out.print(trans.word + "/" + trans.POS + ", "); } System.out.print("\n");} 
             f = input.readLine();
          }
          input.close();
@@ -58,29 +58,35 @@ public class TaggedDictionary {
          
       return output;
    }
-   
    public List<TaggedWord> getWordTranslations(TaggedWord f) {
-      List<TaggedWord> E = new ArrayList<TaggedWord>();
-      if (f.isAWord() && translations.containsKey(f.word.toLowerCase())) {
-         List<TaggedWord> list = translations.get(f.word.toLowerCase());
-         for (TaggedWord e : list) {
-            if (e.samePOS(f))
-               E.add(new TaggedWord(restoreCapitalization(f.word, e.word), e.POS));
-            else if (e.POSisUnk()) 
-               E.add(new TaggedWord(restoreCapitalization(f.word, e.word), f.POS));
+      return getWordTranslations(f, true);
+   }
+   public List<TaggedWord> getWordTranslations(TaggedWord f, boolean matchPOS) {
+      if (matchPOS) {
+         List<TaggedWord> E = new ArrayList<TaggedWord>();
+         if (f.isAWord() && translations.containsKey(f.word.toLowerCase())) {
+            List<TaggedWord> list = translations.get(f.word.toLowerCase());
+            for (TaggedWord e : list) {
+               if (f.samePOS(e))
+                  E.add(new TaggedWord(restoreCapitalization(f.word, e.word), e.POS));
+            }
          }
+         else 
+            E.add(f);
+         return E;
       }
-      return E;
+      else 
+         return translations.get(f.word.toLowerCase());
    }
    
    public TaggedWord getRandomTranslation(TaggedWord f) {
-      List<TaggedWord> E = getWordTranslations(f);
-      if (E.size() > 1)
-         return E.get(rand.nextInt(E.size()));
+      List<TaggedWord> E = getWordTranslations(f, false);
+      if (E == null || E.isEmpty())
+         return f;
       else if (E.size() == 1)
          return E.get(0);
       else
-         return f;
+         return E.get(rand.nextInt(E.size()));
    }
    
 }
