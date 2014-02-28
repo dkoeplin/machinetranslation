@@ -147,7 +147,7 @@ slow down, stop, brake
 fuego
 fire
 fundador
-founder/N, fouding/ADJ
+founder/N, founding/ADJ
 ganado
 cattle/N, win/V, won/VLadj
 gran
@@ -455,7 +455,7 @@ experience
 política
 politics, policy
 varios
-pink/N, minnow/N, varied/ADJ
+pink/N, minnow/N, varied/ADJ, several/QU
 miembros
 members
 comunidades
