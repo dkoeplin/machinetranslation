@@ -22,8 +22,12 @@ public class RearrangedModifiers {
 		
 		for (int i = 0; i < sentence.size(); i++) {
 		   TaggedWord current = sentence.get(i);
-		   boolean nounAdjStopper = current.isAWord() && targetIsNouns && !current.isAdj() && !current.isNoun();
-		   boolean verbAdvStopper = current.isAWord() && !targetIsNouns && !current.isAdv() && !current.isVerb();
+		   boolean isModConjunction = (current.POS.startsWith("C") || current.POS.equals("neg")) && i < sentence.size() - 2 && 
+		                          ((sentence.get(i + 2).isAdj() && targetIsNouns) || sentence.get(i+2).isAdv() && !targetIsNouns);
+	      boolean isTargConjunction = (current.POS.startsWith("C")) && i < sentence.size() - 2 && 
+	                              ((sentence.get(i + 2).isNoun() && targetIsNouns) || sentence.get(i+2).isVerb() && !targetIsNouns);
+		   boolean nounAdjStopper = current.isAWord() && targetIsNouns && !current.isAdj() && !current.isNoun() && !isModConjunction && !isTargConjunction;
+		   boolean verbAdvStopper = current.isAWord() && !targetIsNouns && !current.isAdv() && !current.isVerb() && !isModConjunction && !isTargConjunction;
 		   boolean endOfPhrase = current.isPunct() || i == sentence.size() - 1;
 	      // If we've reached a word that is not a correct modifier or a target, a punction mark, or the end of the sentence
          if ((nounAdjStopper || verbAdvStopper || endOfPhrase) && (!curTarg.isEmpty() || !curMod.isEmpty()) ) {
@@ -42,14 +46,17 @@ public class RearrangedModifiers {
             modifiers = false;
          }
 		   
-		   if (!modifiers && (current.isNoun() || current.isVerb()) ) {
+		   if (!modifiers && (current.isNoun() || current.isVerb() || (isTargConjunction && !curTarg.isEmpty() )) ) {
 		      curTarg.add(current);
 		      locs.add(i);
 		      targetIsNouns = current.isNoun();
 		   }
 		   // If we have at least one target word (noun or verb) and this matches the target type
-		   else if (!curTarg.isEmpty() && ((current.isAdj() && targetIsNouns) || (current.isAdv() && !targetIsNouns))) {
-		      curMod.add(0, current);
+		   else if (!curTarg.isEmpty() && ((current.isAdj() && targetIsNouns) || (current.isAdv() && !targetIsNouns) || isModConjunction)) {
+		      if (current.POS.equals("neg"))
+		         curMod.add(current);
+		      else
+		         curMod.add(0, current);
 		      locs.add(i);
 		      modifiers = true;
 		   }
