@@ -2,16 +2,15 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
+/* Replaces periods in figures as commas and commas to periods within 
+* sequences of numbers (i.e 45,67 to 45.67)
+*/
 public class ProcessFigures {
 
 	Pattern numberPattern = Pattern.compile("\\d+(\\.\\d{3})*(,\\d*)?");
 	
 	public ProcessFigures() { }
 	
-	/* Replaces periods in figures as commas. We can
-	* attempt to change the commas to period (i.e 45,67 to 45.67)
-	*/
 	public void applyStrategy(TaggedSentence t) {
 	   List<TaggedWord> sentence = t.getSentence();
 	   Matcher m;

@@ -44,8 +44,12 @@ public class TaggedSentence {
    public void print(boolean withTags, boolean breaks) {
       for (TaggedWord w : sentence) {
          System.out.print(w.word);
-         if (withTags && w.isAWord())
-            System.out.print("/"+w.POS);
+         if (withTags && w.isAWord()) {
+            if (w.isNoun() || w.isVerb())
+               System.out.print("/"+w.POS + "/" + w.tense);
+            else
+               System.out.print("/"+w.POS);
+         }
          if (breaks) {
             if (w.isSpace()) System.out.print("[SPACE]");
             System.out.print("\n");

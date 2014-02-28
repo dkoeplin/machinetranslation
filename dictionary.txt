@@ -7,7 +7,7 @@ acquisition/N/S, acquisitions/N/P, purchase/N/S, purchases/N/P
 adicta
 addicted/ADJ, attached/ADJ, committed/ADJ, addict/N/S, addicts/N/P
 Afganistán
-Afghanistan/N/S, Afghanistan/N/P, Afghanistan/NP
+Afghanistan/N/S, Afghanistan/N/P
 ahora
 now/ADV, now/C, but/C
 ahorro
@@ -19,7 +19,7 @@ some, any
 ámbito
 field/N/S, fields/N/P, scope/N/S, scopes/N/P
 anuncio
-ad/N/S, ads/N/P announcement/N/S, announcements/N/P
+ad/N/S, ads/N/P, announcement/N/S, announcements/N/P
 apenas
 as soon as, hardly, scarcely, only
 aplicada
@@ -47,15 +47,15 @@ of the, than
 dicho
 aforementioned/ADJ, saying/N/S, sayings/N/P, expression/N/S, expressions/N/P, declaration/N/S, declarations/N/P, says/V/SHE, say/V/THEY/YOU/WE/ME, said/V/PAST, declares/V/SHE, declare/V/THEY/YOU/WE/ME, declared/V/PAST
 dos
+two/N/S/P, second/ADJ
 dólares
 dollar/N/S, dollars/N/P
-two, second/ADJ
 durante
 during
 el
 the
 empleados
-employee/N/S, employees/N/P, employs/V/SHE, employ/V/THEY/YOU/WE/ME, employed/V/PAST, uses/V/SHE use/V/THEY/YOU/WE/ME, used/V/PAST, spends/V/SHE, spend/V/THEY/YOU/WE/ME, spent/V/PAST
+employee/N/S, employees/N/P, employs/V/SHE, employ/V/THEY/YOU/WE/ME, employed/V/PAST, uses/V/SHE, use/V/THEY/YOU/WE/ME, used/V/PAST, spends/V/SHE, spend/V/THEY/YOU/WE/ME, spent/V/PAST
 empleos
 employment/N/S, job/N/S, jobs/N/P
 empresa
@@ -63,13 +63,13 @@ business/N/S, businesses/N/P, company/N/S, companies/N/P
 en
 in, into, by
 encaje
+lace/N/S, laces/N/P, fit/N/S, fits/N/P, fitting/N/S, fittings/N/P
 es
 is/V/SHE, are/V/THEY/YOU/WE/ME, was/V/PAST
 especialmente
 especially
 esta
 is/V/SHE, are/V/THEY/YOU/WE/ME, was/V/PAST
-lace/N/S, laces/N/P, fit/N/S, fits/N/P, fitting/N/S, fittings/N/P
 esencialmente
 essentially
 estrategia
@@ -77,7 +77,7 @@ strategy/N/S, strategies/N/P
 esto
 this
 Europea
-European/N/S, European/N/P, European/NP
+European/N/S, European/N/P
 euros
 euro/N/S, eurors/N/P
 experimenta
@@ -113,7 +113,7 @@ the
 llamativa
 striking
 lo
-it/P, the/ART, it/N
+it/P, the/ART, it/N/S, them/N/P
 los
 the
 mantiene
@@ -177,7 +177,7 @@ service/N/S, services/N/P
 similar
 similar
 sí
-yes/N/S, yeses/N/P
+yes
 tanto
 so much/P, so much/ADJ, as much/P, point/N/S, points/N/P, goal/N/S, goals/N/P, so/ADV, much/ADV, both/ADV
 soy
@@ -199,11 +199,11 @@ a
 único
 unique, only
 Unión
-Union/N/S, Union/N/P, Union/NP
+Union/N/S, Union/N/P
 vez
 time/N/S, times/N/P
 viaje
-trip/N/S, trips/N/P, journey/N/S, journeys/N
+trip/N/S, trips/N/P, journey/N/S, journeys/N/P
 semana
 week/N/S, semanas/N/P
 semanas
@@ -213,11 +213,11 @@ leader/N/S, leaders/N/P, representative/N/S, representatives/N/P
 apoyó
 supports/V/SHE, support/V/THEY/YOU/WE/ME, supported/V/PAST
 candidato
-candidate/N/S, candidates/N/P
+candidate/N/S, candidates/N/P, candidate/ADJ
 oficialista
 government/ADJ, government/N/S, governments/N/P
 quito
-remove/V, Quito/NP, Quito/N/S, Quito/N/P
+remove/V/ME/WE/THEY/YOU, removes/V/SHE, removed/V/PAST, Quito/N/S, Quito/N/P
 actual
 current/ADJ, present/ADJ, topical/ADJ
 alcalde
@@ -225,13 +225,13 @@ mayor/N/S, mayors/N/P
 según
 according to/P, as/C, depending on/P
 preliminares
-preliminary/N/S, preliminaries/N/P
+preliminary/N/S, preliminaries/N/P, preliminary/ADJ
 datos
 data/N/P, datum/N/S
 consejo
-advice/N/S, advices/N/P, council/N/S, councils/N/P, meeting/N/S meetings/NS
+advice/N/S, advices/N/P, council/N/S, councils/N/P, meeting/N/S, meetings/N/P
 nacional
-national
+national/N/S/P, national/ADJ
 electorcal
 electoral
 reportados
@@ -245,7 +245,7 @@ opponent/N/S, opponnets/N/P
 habría
 has/V/SHE, have/V/THEY/YOU/WE/ME, had/V/PAST
 ganado
-cattle/N, wins/V/SHE, win/V/THEY/YOU/WE/ME, won/V/PAST, won/VLadj
+cow/N/S, cattle/N/P, wins/V/SHE, win/V/THEY/YOU/WE/ME, won/V/PAST
 más
 more
 votos
@@ -269,7 +269,7 @@ only
 posible
 possible
 bañarse
-bathes/V/S, bathe/V/THEY/YOU/WE/ME, bathed/V/PAST
+bathes/V/SHE, bathe/V/THEY/YOU/WE/ME, bathed/V/PAST
 mar
 sea/N/S, seas/N/P
 muerto
@@ -289,7 +289,7 @@ housing/N/S, housings/N/P, home/N/S, homes/N/P
 han
 has/V/SHE, have/V/THEY/YOU/WE/ME, had/V/PAST
 ido
-gone/ADJ, goes/V/SHE, go/V/THE/YOU/WE/ME, went/V/PAST
+gone/ADJ, goes/V/SHE, go/V/THEY/YOU/WE/ME, went/V/PAST
 frenando
 slows down/V/SHE, slow down/V/THEY/YOU/WE/ME, slowed down/V/YOU/WE/ME, stops/V/SHE, stop/V/THEY/YOU/WE/ME, stopped/V/PAST, brakes/V/SHE, brake/V/THEY/YOU/WE/ME, broke/V/PAST
 hasta
@@ -297,9 +297,9 @@ until/P, up to/P, down to/P, even/ADV
 impacto
 impact/N/S, impacts/N/P,
 contra
-against/P, con/N/S, cons/N/P against/ADV
+against/P, con/N/S, cons/N/P, against/ADV
 suelo
-ground/N/S, grounds/N/P floor/N/S, floors/N/P
+ground/N/S, grounds/N/P, floor/N/S, floors/N/P
 alertado
 alerts/V/SHE, alert/V/THEY/YOU/WE/ME, alerted/V/PAST, alarms/V/SHE, alarm/V/THEY/YOU/WE/ME, alarmed/V/PAST
 vecino
@@ -307,6 +307,14 @@ neighbor/N/S, neighbors/N/P, neighboring/ADJ
 quien
 who
 avisó
-notices/V/SHE, notice/V/THEY/YOU/WERE/ME, noticed/V/PAST, warns/V/SHE, warn/V/THEY/YOU/WERE/ME, warned/V/PAST, advises/V/SHE, advise/V/THEY/YOU/WE/ME, advised/V/PAST
+warns/V/SHE, warn/V/THEY/YOU/WE/ME, warned/V/PAST, advises/V/SHE, advise/V/THEY/YOU/WE/ME, advised/V/PAST
 emergencia
 emergency/N/S, emergencies/N/P
+son
+are/V/WE/THEY/YOU, am/V/ME, is/SHE, was/PAST, sound/N/S, sounds/N/P
+las
+the
+su
+his, her
+es
+is/V/SHE, are/V/WE/THEY/YOU, am/V/ME, was/PAST

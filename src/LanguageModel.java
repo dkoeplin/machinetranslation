@@ -51,6 +51,50 @@ public class LanguageModel {
       logV = Math.log(V);
    }
    
+   public TaggedWord chooseBestTri(TaggedWord prevWord, List<TaggedWord> possibleWords, List<TaggedWord> possibleNexts) {
+      if (possibleWords == null || possibleWords.isEmpty())
+         return new TaggedWord("UNK", "");
+      
+      // Default to greedy selection if we have no next word
+      if (possibleNexts == null || possibleNexts.isEmpty())
+         return chooseBestGreedy(prevWord, possibleWords);
+      
+      double highScore = Double.NEGATIVE_INFINITY;
+      TaggedWord choice = possibleWords.get(0);
+      if (possibleWords.size() == 1)
+         return choice;
+         
+      for (TaggedWord cur : possibleWords) {
+         for (TaggedWord next : possibleNexts) {
+            String[] prevs = prevWord.word.split("\\s+");
+            String[] curs = cur.word.split("\\s+");
+            String[] nexts = next.word.split("\\s+");
+
+            double thisScore;
+            List<String> ngram = new ArrayList<String>();
+            ngram.add(prevs[prevs.length - 1]);
+            if (curs.length > 1) {
+              ngram.add(curs[0]);
+              thisScore = score(ngram);
+              ngram.clear();
+              ngram.add(curs[curs.length - 1]);
+              ngram.add(nexts[nexts.length - 1]);
+              thisScore += score(ngram);
+            }
+            else {
+               ngram.add(curs[0]);
+               ngram.add(nexts[nexts.length - 1]);
+               thisScore = score(ngram);
+            }
+            if (thisScore > highScore) {
+               highScore = thisScore;
+               choice = cur;
+            }
+         }
+      }
+      return choice;
+   }
+   
    public TaggedWord chooseBestGreedy(TaggedWord prevWord, List<TaggedWord> possibleWords) {
       double highScore = Double.NEGATIVE_INFINITY;
       if (possibleWords.isEmpty()) {
@@ -65,10 +109,10 @@ public class LanguageModel {
          String[] previousWord = prevWord.word.split("\\s+");
          String[] candidateWord = candidate.word.split("\\s+");
          
-         double score = scorebigram(previousWord[previousWord.length-1], candidateWord[0]);
+         double thisScore = scorebigram(previousWord[previousWord.length-1], candidateWord[0]);
          //System.out.println("\t" + candidate.word + ": " + score);
-         if (score > highScore) {
-            highScore = score;
+         if (thisScore > highScore) {
+            highScore = thisScore;
             choice = candidate;
          }
       }
