@@ -155,7 +155,6 @@ public class Translator {
          processNegation.applyStrategy(sentence);
          rearrangedModifiers.applyStrategy(sentence);
          
-         translator.multiBigramModelTranslation(sentence,false,false).print();
          translator.multiBigramModelTranslation(sentence).print();
          //replaceWithAn.applyStrategy(english);
          //processFigures.applyStrategy(english);
