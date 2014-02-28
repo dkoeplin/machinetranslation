@@ -68,7 +68,7 @@ is/V/SHE, are/V/THEY/YOU/WE/ME, was/V/PAST
 especialmente
 especially
 esta
-is/V/SHE, are/V/THEY/YOU/WE/ME, was/V/PAST
+this
 lace/N/S, laces/N/P, fit/N/S, fits/N/P, fitting/N/S, fittings/N/P
 esencialmente
 essentially
@@ -474,3 +474,5 @@ gastos
 expenses/N/P, expense/N/S
 sociales
 social/ADJ, reunion/N/S, reunions/N/P
+le
+to him, to her
