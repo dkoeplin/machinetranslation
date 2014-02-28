@@ -53,7 +53,8 @@ public class TaggedWord {
          System.out.println("Entry " + w + " has unknown tense " + t);
          System.exit(-1);
       }
-      if (this.isVerb() && !(tense.equals(past) || tense.equals(we) || tense.equals(she) || tense.equals(you) || tense.equals(they) || tense.equals(me))) {
+      if (this.isVerb() && !(tense.equals(past) || tense.equals(we) || tense.equals(she) || tense.equals(you) 
+            || tense.equals(they) || tense.equals(me) || tense.equals("ger") || tense.equals("inf"))) {
          System.out.println("Entry " + w + " has unknown tense " + t);
          System.exit(-1);
       }
@@ -71,11 +72,11 @@ public class TaggedWord {
       else
          POS = (sfind.find()) ? space : punct;
       
-      if (POS.startsWith("V")) {
-         if (POS.equals("VEadj") || (POS.equals("VHadj") || POS.equals("VLadj") || POS.equals("VMadj") || POS.equals("VSadj"))) {
+      if (POS.equals("VEadj") || POS.equals("VHadj") || POS.equals("VLadj") || POS.equals("VMadj") || POS.equals("VSadj")) {
             tense = past;
-         }
-         else if (w.endsWith("os")) 
+      }
+      else if (POS.startsWith("V") && POS.endsWith("fin")) {
+         if (w.endsWith("os")) 
             tense = we;
          else if (w.endsWith("is"))
             tense = you;
@@ -88,6 +89,8 @@ public class TaggedWord {
          else
             tense = she;
       }
+      else if (POS.startsWith("V")) 
+         tense = POS.substring(POS.length() - 3, POS.length());
       else if (POS.startsWith("N"))
          if (w.endsWith("s"))
             tense = plur;
